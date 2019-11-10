@@ -4,6 +4,8 @@ class CreateCards < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :imageUrl
       t.integer :hp
+      t.string :attack_name
+      t.integer :attack_damage
       t.integer :deck_id
 
       t.timestamps
