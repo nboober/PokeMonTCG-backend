@@ -13735,3 +13735,1227 @@ Processing by DecksController#show as */*
 Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 10353)
 
 
+Started GET "/users" for ::1 at 2019-11-11 09:55:28 -0500
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.0.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDeck Load (1.3ms)[0m  [1m[34mSELECT "decks".* FROM "decks"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDeck Destroy (0.3ms)[0m  [1m[31mDELETE FROM "decks" WHERE "decks"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCard Load (2.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 4]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 7]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 8]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 10]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 11]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 12]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 13]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 14]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 15]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 16]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 17]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 18]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 19]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 20]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 21]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 22]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 23]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 24]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 25]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 26]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 27]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 28]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 29]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 30]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.8ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 31]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 32]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 33]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 34]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 35]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 36]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 37]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 38]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 39]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 40]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 41]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 42]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 43]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 44]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 45]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 46]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 47]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 48]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 49]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 50]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.8ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 51]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 52]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 53]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 54]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 55]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 56]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 57]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 58]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 59]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 60]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Nick"], ["created_at", "2019-11-11 14:55:56.849196"], ["updated_at", "2019-11-11 14:55:56.849196"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mDeck Create (0.4ms)[0m  [1m[32mINSERT INTO "decks" ("name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Fire and Electic Starter Deck"], ["user_id", 2], ["created_at", "2019-11-11 14:55:56.873996"], ["updated_at", "2019-11-11 14:55:56.873996"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pikachu"], ["imageUrl", "https://images.pokemontcg.io/xy1/42_hires.png"], ["hp", 60], ["attack_name", "Nuzzle"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.052616"], ["updated_at", "2019-11-11 14:55:57.052616"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charmander"], ["imageUrl", "https://images.pokemontcg.io/base1/46_hires.png"], ["hp", 50], ["attack_name", "Scratch"], ["attack_damage", 10], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.058420"], ["updated_at", "2019-11-11 14:55:57.058420"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Feraligatr δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/2_hires.png"], ["hp", 120], ["attack_name", "Drag Off"], ["attack_damage", 20], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.063428"], ["updated_at", "2019-11-11 14:55:57.063428"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magmar"], ["imageUrl", "https://images.pokemontcg.io/hgss4/42_hires.png"], ["hp", 70], ["attack_name", "Eruption"], ["attack_damage", 20], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.068994"], ["updated_at", "2019-11-11 14:55:57.068994"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Luxray"], ["imageUrl", "https://images.pokemontcg.io/pl4/5_hires.png"], ["hp", 120], ["attack_name", "Flash"], ["attack_damage", 30], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.073889"], ["updated_at", "2019-11-11 14:55:57.073889"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magnemite"], ["imageUrl", "https://images.pokemontcg.io/hgss4/68_hires.png"], ["hp", 50], ["attack_name", "Magnetic Switch"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.095842"], ["updated_at", "2019-11-11 14:55:57.095842"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mareep"], ["imageUrl", "https://images.pokemontcg.io/ex3/64_hires.png"], ["hp", 50], ["attack_name", "Jolt"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.101856"], ["updated_at", "2019-11-11 14:55:57.101856"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Slugma"], ["imageUrl", "https://images.pokemontcg.io/hgss3/67_hires.png"], ["hp", 60], ["attack_name", "Combustion"], ["attack_damage", 40], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.107393"], ["updated_at", "2019-11-11 14:55:57.107393"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Infernape"], ["imageUrl", "https://images.pokemontcg.io/dp1/5_hires.png"], ["hp", 100], ["attack_name", "Meteor Punch"], ["attack_damage", 30], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.112835"], ["updated_at", "2019-11-11 14:55:57.112835"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pupitar δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/59_hires.png"], ["hp", 70], ["attack_name", "Hyper Beam"], ["attack_damage", 20], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.119197"], ["updated_at", "2019-11-11 14:55:57.119197"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Flareon"], ["imageUrl", "https://images.pokemontcg.io/col1/44_hires.png"], ["hp", 90], ["attack_name", "Flame Tail"], ["attack_damage", 30], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.125457"], ["updated_at", "2019-11-11 14:55:57.125457"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ho-Oh BREAK"], ["imageUrl", "https://images.pokemontcg.io/xyp/XY154_hires.png"], ["hp", 150], ["attack_name", "Shining Flame"], ["attack_damage", 160], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.130309"], ["updated_at", "2019-11-11 14:55:57.130309"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cyndaquil"], ["imageUrl", "https://images.pokemontcg.io/col1/55_hires.png"], ["hp", 40], ["attack_name", "Fireworks"], ["attack_damage", 20], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.135861"], ["updated_at", "2019-11-11 14:55:57.135861"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ho-Oh BREAK"], ["imageUrl", "https://images.pokemontcg.io/xyp/XY154_hires.png"], ["hp", 150], ["attack_name", "Shining Flame"], ["attack_damage", 160], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.140060"], ["updated_at", "2019-11-11 14:55:57.140060"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pachirisu"], ["imageUrl", "https://images.pokemontcg.io/dp1/35_hires.png"], ["hp", 70], ["attack_name", "Minor Errand-Running"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.144542"], ["updated_at", "2019-11-11 14:55:57.144542"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Raikou-EX"], ["imageUrl", "https://images.pokemontcg.io/bw5/38_hires.png"], ["hp", 170], ["attack_name", "Thunder Fang"], ["attack_damage", 30], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.149159"], ["updated_at", "2019-11-11 14:55:57.149159"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Feraligatr δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/2_hires.png"], ["hp", 120], ["attack_name", "Drag Off"], ["attack_damage", 20], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.153405"], ["updated_at", "2019-11-11 14:55:57.153405"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chimchar"], ["imageUrl", "https://images.pokemontcg.io/dp1/76_hires.png"], ["hp", 50], ["attack_name", "Scratch"], ["attack_damage", 10], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.158005"], ["updated_at", "2019-11-11 14:55:57.158005"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Arbok δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/13_hires.png"], ["hp", 80], ["attack_name", "Burning Venom"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.163010"], ["updated_at", "2019-11-11 14:55:57.163010"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Plusle"], ["imageUrl", "https://images.pokemontcg.io/ex3/8_hires.png"], ["hp", 50], ["attack_name", "Cheer On"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.168240"], ["updated_at", "2019-11-11 14:55:57.168240"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Emolga-EX"], ["imageUrl", "https://images.pokemontcg.io/xy1/143_hires.png"], ["hp", 110], ["attack_name", "Energy Glide"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.173915"], ["updated_at", "2019-11-11 14:55:57.173915"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Heracross δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/3_hires.png"], ["hp", 70], ["attack_name", "Dig Deep"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.179287"], ["updated_at", "2019-11-11 14:55:57.179287"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Milotic δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/5_hires.png"], ["hp", 90], ["attack_name", "Flare"], ["attack_damage", 60], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.184795"], ["updated_at", "2019-11-11 14:55:57.184795"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magneton"], ["imageUrl", "https://images.pokemontcg.io/bw8/45_hires.png"], ["hp", 80], ["attack_name", "Knock Away"], ["attack_damage", 20], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.190764"], ["updated_at", "2019-11-11 14:55:57.190764"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Minun"], ["imageUrl", "https://images.pokemontcg.io/ex3/7_hires.png"], ["hp", 50], ["attack_name", "Cheer On"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.196595"], ["updated_at", "2019-11-11 14:55:57.196595"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charmander"], ["imageUrl", "https://images.pokemontcg.io/det1/4_hires.png"], ["hp", 60], ["attack_name", "Reckless Charge"], ["attack_damage", 20], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.201651"], ["updated_at", "2019-11-11 14:55:57.201651"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Growlithe"], ["imageUrl", "https://images.pokemontcg.io/sm10/21_hires.png"], ["hp", 80], ["attack_name", "Live Coal"], ["attack_damage", 10], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.206186"], ["updated_at", "2019-11-11 14:55:57.206186"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Volcanion"], ["imageUrl", "https://images.pokemontcg.io/xyp/XY164_hires.png"], ["hp", 130], ["attack_name", "Concentrated Fire"], ["attack_damage", 50], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.211247"], ["updated_at", "2019-11-11 14:55:57.211247"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Slugma"], ["imageUrl", "https://images.pokemontcg.io/hgss3/67_hires.png"], ["hp", 60], ["attack_name", "Combustion"], ["attack_damage", 40], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.216549"], ["updated_at", "2019-11-11 14:55:57.216549"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pupitar δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/59_hires.png"], ["hp", 70], ["attack_name", "Hyper Beam"], ["attack_damage", 20], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.221803"], ["updated_at", "2019-11-11 14:55:57.221803"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mareep"], ["imageUrl", "https://images.pokemontcg.io/ex3/64_hires.png"], ["hp", 50], ["attack_name", "Jolt"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.226791"], ["updated_at", "2019-11-11 14:55:57.226791"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Delphox"], ["imageUrl", "https://images.pokemontcg.io/xy1/26_hires.png"], ["hp", 140], ["attack_name", "Blaze Ball"], ["attack_damage", 50], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.231603"], ["updated_at", "2019-11-11 14:55:57.231603"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Slugma"], ["imageUrl", "https://images.pokemontcg.io/ex8/74_hires.png"], ["hp", 50], ["attack_name", "Collect"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.236493"], ["updated_at", "2019-11-11 14:55:57.236493"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ampharos-EX"], ["imageUrl", "https://images.pokemontcg.io/xy7/27_hires.png"], ["hp", 170], ["attack_name", "Thunder Rod"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.241731"], ["updated_at", "2019-11-11 14:55:57.241731"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magnemite"], ["imageUrl", "https://images.pokemontcg.io/xy8/52_hires.png"], ["hp", 60], ["attack_name", "Shock Generator"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.246674"], ["updated_at", "2019-11-11 14:55:57.246674"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magmar"], ["imageUrl", "https://images.pokemontcg.io/g1/16_hires.png"], ["hp", 80], ["attack_name", "Ram"], ["attack_damage", 10], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.251547"], ["updated_at", "2019-11-11 14:55:57.251547"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Plusle"], ["imageUrl", "https://images.pokemontcg.io/hgss2/36_hires.png"], ["hp", 60], ["attack_name", "Collect"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.256431"], ["updated_at", "2019-11-11 14:55:57.256431"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magneton"], ["imageUrl", "https://images.pokemontcg.io/ex3/17_hires.png"], ["hp", 70], ["attack_name", "Magnetic Force"], ["attack_damage", 10], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.260783"], ["updated_at", "2019-11-11 14:55:57.260783"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Monferno"], ["imageUrl", "https://images.pokemontcg.io/dp1/56_hires.png"], ["hp", 70], ["attack_name", "Flame Dance"], ["attack_damage", 30], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.265422"], ["updated_at", "2019-11-11 14:55:57.265422"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Manectric"], ["imageUrl", "https://images.pokemontcg.io/ex8/38_hires.png"], ["hp", 70], ["attack_name", "Thunder Spear"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.269619"], ["updated_at", "2019-11-11 14:55:57.269619"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Torchic"], ["imageUrl", "https://images.pokemontcg.io/bw11/RC5_hires.png"], ["hp", 60], ["attack_name", "Peck"], ["attack_damage", 10], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.274439"], ["updated_at", "2019-11-11 14:55:57.274439"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charizard"], ["imageUrl", "https://images.pokemontcg.io/ex3/100_hires.png"], ["hp", 120], ["attack_name", "Collect Fire"], ["attack_damage", 30], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.279572"], ["updated_at", "2019-11-11 14:55:57.279572"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dratini δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/66_hires.png"], ["hp", 50], ["attack_name", "Thunder Wave"], ["attack_damage", 10], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.286145"], ["updated_at", "2019-11-11 14:55:57.286145"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cyndaquil"], ["imageUrl", "https://images.pokemontcg.io/col1/55_hires.png"], ["hp", 40], ["attack_name", "Fireworks"], ["attack_damage", 20], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.292455"], ["updated_at", "2019-11-11 14:55:57.292455"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Raikou-EX"], ["imageUrl", "https://images.pokemontcg.io/bw5/38_hires.png"], ["hp", 170], ["attack_name", "Thunder Fang"], ["attack_damage", 30], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.298001"], ["updated_at", "2019-11-11 14:55:57.298001"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magnemite"], ["imageUrl", "https://images.pokemontcg.io/bw8/43_hires.png"], ["hp", 60], ["attack_name", "Electro Ball"], ["attack_damage", 10], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.303592"], ["updated_at", "2019-11-11 14:55:57.303592"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fletchinder"], ["imageUrl", "https://images.pokemontcg.io/xy1/27_hires.png"], ["hp", 70], ["attack_name", "Flame Charge"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.308218"], ["updated_at", "2019-11-11 14:55:57.308218"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Luxray"], ["imageUrl", "https://images.pokemontcg.io/pl4/5_hires.png"], ["hp", 120], ["attack_name", "Flash"], ["attack_damage", 30], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.314343"], ["updated_at", "2019-11-11 14:55:57.314343"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Delphox"], ["imageUrl", "https://images.pokemontcg.io/xy1/26_hires.png"], ["hp", 140], ["attack_name", "Blaze Ball"], ["attack_damage", 50], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.320369"], ["updated_at", "2019-11-11 14:55:57.320369"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Raikou-EX"], ["imageUrl", "https://images.pokemontcg.io/bw5/38_hires.png"], ["hp", 170], ["attack_name", "Thunder Fang"], ["attack_damage", 30], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.325423"], ["updated_at", "2019-11-11 14:55:57.325423"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Raichu"], ["imageUrl", "https://images.pokemontcg.io/hgss3/83_hires.png"], ["hp", 100], ["attack_name", "Mega Thunderbolt"], ["attack_damage", 120], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.330104"], ["updated_at", "2019-11-11 14:55:57.330104"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Slugma"], ["imageUrl", "https://images.pokemontcg.io/hgss3/67_hires.png"], ["hp", 60], ["attack_name", "Combustion"], ["attack_damage", 40], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.355077"], ["updated_at", "2019-11-11 14:55:57.355077"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Electabuzz"], ["imageUrl", "https://images.pokemontcg.io/sm8/71_hires.png"], ["hp", 80], ["attack_name", "Thunder Shock"], ["attack_damage", 30], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.360068"], ["updated_at", "2019-11-11 14:55:57.360068"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Delphox"], ["imageUrl", "https://images.pokemontcg.io/xy1/26_hires.png"], ["hp", 140], ["attack_name", "Blaze Ball"], ["attack_damage", 50], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.367517"], ["updated_at", "2019-11-11 14:55:57.367517"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pikachu-EX"], ["imageUrl", "https://images.pokemontcg.io/xyp/XY174_hires.png"], ["hp", 130], ["attack_name", "Thunder Shock"], ["attack_damage", 30], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.375337"], ["updated_at", "2019-11-11 14:55:57.375337"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dratini δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/66_hires.png"], ["hp", 50], ["attack_name", "Thunder Wave"], ["attack_damage", 10], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.383138"], ["updated_at", "2019-11-11 14:55:57.383138"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pachirisu"], ["imageUrl", "https://images.pokemontcg.io/dp1/35_hires.png"], ["hp", 70], ["attack_name", "Minor Errand-Running"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.390170"], ["updated_at", "2019-11-11 14:55:57.390170"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Bagon δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/58_hires.png"], ["hp", 50], ["attack_name", "Ember"], ["attack_damage", 30], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.397533"], ["updated_at", "2019-11-11 14:55:57.397533"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magnemite"], ["imageUrl", "https://images.pokemontcg.io/xy8/52_hires.png"], ["hp", 60], ["attack_name", "Shock Generator"], ["attack_damage", 0], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.403668"], ["updated_at", "2019-11-11 14:55:57.403668"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dragonair δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/41_hires.png"], ["hp", 70], ["attack_name", "Slam"], ["attack_damage", 20], ["deck_id", 2], ["created_at", "2019-11-11 14:55:57.411505"], ["updated_at", "2019-11-11 14:55:57.411505"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users" for ::1 at 2019-11-11 09:57:04 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.0.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-11-11 09:58:02 -0500
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.0.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-11-11 09:58:04 -0500
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.0.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-11-11 09:58:04 -0500
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.0.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDeck Destroy (0.3ms)[0m  [1m[31mDELETE FROM "decks" WHERE "decks"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCard Load (1.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 61]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 62]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 63]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 64]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 65]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 66]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 67]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 68]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 69]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 70]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 71]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 72]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (1.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 73]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 74]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 75]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 76]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 77]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 78]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 79]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 80]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 81]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 82]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 83]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 84]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 85]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 86]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 87]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 88]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 89]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 90]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 91]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 92]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 93]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 94]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 95]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 96]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 97]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 98]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 99]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 100]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 101]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 102]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 103]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 104]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 105]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 106]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 107]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 108]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 109]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 110]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 111]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 112]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 113]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 114]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 115]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 116]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 117]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 118]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 119]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 120]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Nick"], ["created_at", "2019-11-11 14:58:32.353282"], ["updated_at", "2019-11-11 14:58:32.353282"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDeck Create (0.3ms)[0m  [1m[32mINSERT INTO "decks" ("name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Fire and Electic Starter Deck"], ["user_id", 3], ["created_at", "2019-11-11 14:58:32.363454"], ["updated_at", "2019-11-11 14:58:32.363454"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dratini δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/66_hires.png"], ["hp", 50], ["attack_name", "Thunder Wave"], ["attack_damage", 10], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.609720"], ["updated_at", "2019-11-11 14:58:32.609720"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rotom"], ["imageUrl", "https://images.pokemontcg.io/sm5/50_hires.png"], ["hp", 70], ["attack_name", "Plasma Slice"], ["attack_damage", 120], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.616705"], ["updated_at", "2019-11-11 14:58:32.616705"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magneton"], ["imageUrl", "https://images.pokemontcg.io/ex3/17_hires.png"], ["hp", 70], ["attack_name", "Magnetic Force"], ["attack_damage", 10], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.623491"], ["updated_at", "2019-11-11 14:58:32.623491"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Raikou Star"], ["imageUrl", "https://images.pokemontcg.io/ex10/114_hires.png"], ["hp", 80], ["attack_name", "Lightning Turn"], ["attack_damage", 20], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.629619"], ["updated_at", "2019-11-11 14:58:32.629619"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Flaaffy"], ["imageUrl", "https://images.pokemontcg.io/col1/43_hires.png"], ["hp", 80], ["attack_name", "Thunder Spear"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.636681"], ["updated_at", "2019-11-11 14:58:32.636681"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Plusle"], ["imageUrl", "https://images.pokemontcg.io/hgss2/36_hires.png"], ["hp", 60], ["attack_name", "Collect"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.642590"], ["updated_at", "2019-11-11 14:58:32.642590"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Electabuzz"], ["imageUrl", "https://images.pokemontcg.io/dp1/81_hires.png"], ["hp", 70], ["attack_name", "Thunderpunch"], ["attack_damage", 30], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.648223"], ["updated_at", "2019-11-11 14:58:32.648223"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dragonair δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/41_hires.png"], ["hp", 70], ["attack_name", "Slam"], ["attack_damage", 20], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.654514"], ["updated_at", "2019-11-11 14:58:32.654514"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magnemite"], ["imageUrl", "https://images.pokemontcg.io/xy8/52_hires.png"], ["hp", 60], ["attack_name", "Shock Generator"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.675769"], ["updated_at", "2019-11-11 14:58:32.675769"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ho-Oh BREAK"], ["imageUrl", "https://images.pokemontcg.io/xyp/XY154_hires.png"], ["hp", 150], ["attack_name", "Shining Flame"], ["attack_damage", 160], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.680668"], ["updated_at", "2019-11-11 14:58:32.680668"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pupitar δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/59_hires.png"], ["hp", 70], ["attack_name", "Hyper Beam"], ["attack_damage", 20], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.685331"], ["updated_at", "2019-11-11 14:58:32.685331"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jolteon"], ["imageUrl", "https://images.pokemontcg.io/bw5/37_hires.png"], ["hp", 90], ["attack_name", "Electrigun"], ["attack_damage", 20], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.690079"], ["updated_at", "2019-11-11 14:58:32.690079"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rotom"], ["imageUrl", "https://images.pokemontcg.io/sm5/50_hires.png"], ["hp", 70], ["attack_name", "Plasma Slice"], ["attack_damage", 120], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.695069"], ["updated_at", "2019-11-11 14:58:32.695069"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Joltik"], ["imageUrl", "https://images.pokemontcg.io/xy11/41_hires.png"], ["hp", 30], ["attack_name", "Attach"], ["attack_damage", 10], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.700373"], ["updated_at", "2019-11-11 14:58:32.700373"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magnemite"], ["imageUrl", "https://images.pokemontcg.io/hgss4/68_hires.png"], ["hp", 50], ["attack_name", "Magnetic Switch"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.705563"], ["updated_at", "2019-11-11 14:58:32.705563"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magmar"], ["imageUrl", "https://images.pokemontcg.io/hgss4/42_hires.png"], ["hp", 70], ["attack_name", "Eruption"], ["attack_damage", 20], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.710598"], ["updated_at", "2019-11-11 14:58:32.710598"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Minun"], ["imageUrl", "https://images.pokemontcg.io/ex3/7_hires.png"], ["hp", 50], ["attack_name", "Cheer On"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.716014"], ["updated_at", "2019-11-11 14:58:32.716014"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (1.0ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charmander"], ["imageUrl", "https://images.pokemontcg.io/base1/46_hires.png"], ["hp", 50], ["attack_name", "Scratch"], ["attack_damage", 10], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.722386"], ["updated_at", "2019-11-11 14:58:32.722386"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Eelektrik"], ["imageUrl", "https://images.pokemontcg.io/bw5/46_hires.png"], ["hp", 90], ["attack_name", "Headbutt"], ["attack_damage", 20], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.732620"], ["updated_at", "2019-11-11 14:58:32.732620"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (1.1ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Plusle"], ["imageUrl", "https://images.pokemontcg.io/hgss2/36_hires.png"], ["hp", 60], ["attack_name", "Collect"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.738220"], ["updated_at", "2019-11-11 14:58:32.738220"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magneton"], ["imageUrl", "https://images.pokemontcg.io/ex16/16_hires.png"], ["hp", 70], ["attack_name", "Magnetic Force"], ["attack_damage", 10], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.745525"], ["updated_at", "2019-11-11 14:58:32.745525"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tyranitar ex δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/99_hires.png"], ["hp", 150], ["attack_name", "Electromark"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.750888"], ["updated_at", "2019-11-11 14:58:32.750888"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Torchic"], ["imageUrl", "https://images.pokemontcg.io/bw11/RC5_hires.png"], ["hp", 60], ["attack_name", "Peck"], ["attack_damage", 10], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.756514"], ["updated_at", "2019-11-11 14:58:32.756514"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magnemite"], ["imageUrl", "https://images.pokemontcg.io/ex16/54_hires.png"], ["hp", 50], ["attack_name", "Ram"], ["attack_damage", 10], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.762290"], ["updated_at", "2019-11-11 14:58:32.762290"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Entei-EX"], ["imageUrl", "https://images.pokemontcg.io/bw5/103_hires.png"], ["hp", 180], ["attack_name", "Fire Fang"], ["attack_damage", 30], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.768083"], ["updated_at", "2019-11-11 14:58:32.768083"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team Magma's Camerupt"], ["imageUrl", "https://images.pokemontcg.io/dc1/2_hires.png"], ["hp", 110], ["attack_name", "Flame Ball"], ["attack_damage", 60], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.773929"], ["updated_at", "2019-11-11 14:58:32.773929"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magmar"], ["imageUrl", "https://images.pokemontcg.io/g1/16_hires.png"], ["hp", 80], ["attack_name", "Ram"], ["attack_damage", 10], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.779232"], ["updated_at", "2019-11-11 14:58:32.779232"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magnemite"], ["imageUrl", "https://images.pokemontcg.io/bw8/42_hires.png"], ["hp", 60], ["attack_name", "Metal Sound"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.784628"], ["updated_at", "2019-11-11 14:58:32.784628"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Flareon"], ["imageUrl", "https://images.pokemontcg.io/col1/44_hires.png"], ["hp", 90], ["attack_name", "Flame Tail"], ["attack_damage", 30], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.790020"], ["updated_at", "2019-11-11 14:58:32.790020"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jolteon"], ["imageUrl", "https://images.pokemontcg.io/bw5/37_hires.png"], ["hp", 90], ["attack_name", "Electrigun"], ["attack_damage", 20], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.794800"], ["updated_at", "2019-11-11 14:58:32.794800"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Bagon δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/58_hires.png"], ["hp", 50], ["attack_name", "Ember"], ["attack_damage", 30], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.800017"], ["updated_at", "2019-11-11 14:58:32.800017"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Litten"], ["imageUrl", "https://images.pokemontcg.io/sm10/27_hires.png"], ["hp", 60], ["attack_name", "Caturday"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.804970"], ["updated_at", "2019-11-11 14:58:32.804970"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Torkoal"], ["imageUrl", "https://images.pokemontcg.io/ex3/12_hires.png"], ["hp", 80], ["attack_name", "Power Generation"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.810060"], ["updated_at", "2019-11-11 14:58:32.810060"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rapidash"], ["imageUrl", "https://images.pokemontcg.io/ex11/52_hires.png"], ["hp", 70], ["attack_name", "Super Singe"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.815358"], ["updated_at", "2019-11-11 14:58:32.815358"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Torchic"], ["imageUrl", "https://images.pokemontcg.io/bw11/RC5_hires.png"], ["hp", 60], ["attack_name", "Peck"], ["attack_damage", 10], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.819419"], ["updated_at", "2019-11-11 14:58:32.819419"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magcargo"], ["imageUrl", "https://images.pokemontcg.io/xy1/21_hires.png"], ["hp", 110], ["attack_name", "Magma Mantle"], ["attack_damage", 30], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.824055"], ["updated_at", "2019-11-11 14:58:32.824055"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Flareon"], ["imageUrl", "https://images.pokemontcg.io/col1/44_hires.png"], ["hp", 90], ["attack_name", "Flame Tail"], ["attack_damage", 30], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.829163"], ["updated_at", "2019-11-11 14:58:32.829163"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magnemite"], ["imageUrl", "https://images.pokemontcg.io/xy8/52_hires.png"], ["hp", 60], ["attack_name", "Shock Generator"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.834704"], ["updated_at", "2019-11-11 14:58:32.834704"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magneton"], ["imageUrl", "https://images.pokemontcg.io/ex3/17_hires.png"], ["hp", 70], ["attack_name", "Magnetic Force"], ["attack_damage", 10], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.839940"], ["updated_at", "2019-11-11 14:58:32.839940"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Slugma"], ["imageUrl", "https://images.pokemontcg.io/ex8/74_hires.png"], ["hp", 50], ["attack_name", "Collect"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.845430"], ["updated_at", "2019-11-11 14:58:32.845430"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Minun"], ["imageUrl", "https://images.pokemontcg.io/ex3/7_hires.png"], ["hp", 50], ["attack_name", "Cheer On"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.850323"], ["updated_at", "2019-11-11 14:58:32.850323"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Plusle"], ["imageUrl", "https://images.pokemontcg.io/hgss2/36_hires.png"], ["hp", 60], ["attack_name", "Collect"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.855568"], ["updated_at", "2019-11-11 14:58:32.855568"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magmar"], ["imageUrl", "https://images.pokemontcg.io/hgss4/42_hires.png"], ["hp", 70], ["attack_name", "Eruption"], ["attack_damage", 20], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.860690"], ["updated_at", "2019-11-11 14:58:32.860690"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Blaziken"], ["imageUrl", "https://images.pokemontcg.io/bw5/17_hires.png"], ["hp", 140], ["attack_name", "Blaze Kick"], ["attack_damage", 40], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.865952"], ["updated_at", "2019-11-11 14:58:32.865952"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Torkoal"], ["imageUrl", "https://images.pokemontcg.io/ex3/12_hires.png"], ["hp", 80], ["attack_name", "Power Generation"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.870931"], ["updated_at", "2019-11-11 14:58:32.870931"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Litten"], ["imageUrl", "https://images.pokemontcg.io/sm10/27_hires.png"], ["hp", 60], ["attack_name", "Caturday"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.875717"], ["updated_at", "2019-11-11 14:58:32.875717"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Manectric"], ["imageUrl", "https://images.pokemontcg.io/ex8/38_hires.png"], ["hp", 70], ["attack_name", "Thunder Spear"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.880847"], ["updated_at", "2019-11-11 14:58:32.880847"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Slugma"], ["imageUrl", "https://images.pokemontcg.io/hgss3/67_hires.png"], ["hp", 60], ["attack_name", "Combustion"], ["attack_damage", 40], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.886875"], ["updated_at", "2019-11-11 14:58:32.886875"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Flaaffy"], ["imageUrl", "https://images.pokemontcg.io/col1/43_hires.png"], ["hp", 80], ["attack_name", "Thunder Spear"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.891408"], ["updated_at", "2019-11-11 14:58:32.891408"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Plusle"], ["imageUrl", "https://images.pokemontcg.io/hgss2/36_hires.png"], ["hp", 60], ["attack_name", "Collect"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.896673"], ["updated_at", "2019-11-11 14:58:32.896673"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Electivire"], ["imageUrl", "https://images.pokemontcg.io/dp1/3_hires.png"], ["hp", 100], ["attack_name", "Giga Impact"], ["attack_damage", 60], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.901947"], ["updated_at", "2019-11-11 14:58:32.901947"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pikachu"], ["imageUrl", "https://images.pokemontcg.io/sm10/54_hires.png"], ["hp", 70], ["attack_name", "Pika Ball"], ["attack_damage", 30], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.907039"], ["updated_at", "2019-11-11 14:58:32.907039"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magmar"], ["imageUrl", "https://images.pokemontcg.io/hgss4/42_hires.png"], ["hp", 70], ["attack_name", "Eruption"], ["attack_damage", 20], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.912136"], ["updated_at", "2019-11-11 14:58:32.912136"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gligar δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/16_hires.png"], ["hp", 60], ["attack_name", "Sting Turn"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.928909"], ["updated_at", "2019-11-11 14:58:32.928909"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ho-Oh BREAK"], ["imageUrl", "https://images.pokemontcg.io/xyp/XY154_hires.png"], ["hp", 150], ["attack_name", "Shining Flame"], ["attack_damage", 160], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.934077"], ["updated_at", "2019-11-11 14:58:32.934077"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dark Electrode"], ["imageUrl", "https://images.pokemontcg.io/base5/34_hires.png"], ["hp", 60], ["attack_name", "Rolling Tackle"], ["attack_damage", 10], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.939452"], ["updated_at", "2019-11-11 14:58:32.939452"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rapidash"], ["imageUrl", "https://images.pokemontcg.io/ex11/52_hires.png"], ["hp", 70], ["attack_name", "Super Singe"], ["attack_damage", 0], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.944494"], ["updated_at", "2019-11-11 14:58:32.944494"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magmortar"], ["imageUrl", "https://images.pokemontcg.io/col1/16_hires.png"], ["hp", 110], ["attack_name", "Hard Crush"], ["attack_damage", 50], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.949779"], ["updated_at", "2019-11-11 14:58:32.949779"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Raikou Star"], ["imageUrl", "https://images.pokemontcg.io/ex10/114_hires.png"], ["hp", 80], ["attack_name", "Lightning Turn"], ["attack_damage", 20], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.955125"], ["updated_at", "2019-11-11 14:58:32.955125"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Create (0.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Torchic"], ["imageUrl", "https://images.pokemontcg.io/ex16/67_hires.png"], ["hp", 50], ["attack_name", "Super Singe"], ["attack_damage", 10], ["deck_id", 3], ["created_at", "2019-11-11 14:58:32.960557"], ["updated_at", "2019-11-11 14:58:32.960557"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users" for ::1 at 2019-11-11 09:58:43 -0500
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.0.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-11-11 09:58:43 -0500
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.0.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-11-11 10:01:11 -0500
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.0.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-11-11 10:02:15 -0500
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.0.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-11-11 10:02:53 -0500
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.0.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (6.0.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.0) lib/puma/configuration.rb:228:in `call'
+puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
+puma (4.3.0) lib/puma/server.rb:470:in `process_client'
+puma (4.3.0) lib/puma/server.rb:328:in `block in run'
+puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
