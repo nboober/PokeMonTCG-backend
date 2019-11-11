@@ -29,14 +29,30 @@ deck2_cards = JSON.parse(raw_cards_deck2)
 
 60.times do
     random_card = deck1_cards["cards"].sample
+    
+    no_attack = {name: "No Attack", damage: 0}
+
+    if random_card["attacks"][1] == nil
+        random_card["attacks"].push(no_attack)
+        # byebug
+    end
     Card.create!(name: random_card["name"], imageUrl: random_card["imageUrlHiRes"], hp: random_card["hp"].to_i, attack_name: random_card["attacks"][0]["name"], attack_damage: random_card["attacks"][0]["damage"].to_i,
     attack_name_2: random_card["attacks"][1]["name"], attack_damage_2: random_card["attacks"][1]["damage"].to_i, deck: deck1)
+    # byebug
 end
 
 60.times do
     random_card = deck2_cards["cards"].sample
+
+    no_attack = {name: "No Attack", damage: 0}
+
+    if random_card["attacks"][1] == nil
+        random_card["attacks"].push(no_attack)
+    end
+
     Card.create!(name: random_card["name"], imageUrl: random_card["imageUrlHiRes"], hp: random_card["hp"].to_i, attack_name: random_card["attacks"][0]["name"], attack_damage: random_card["attacks"][0]["damage"].to_i,
     attack_name_2: random_card["attacks"][1]["name"], attack_damage_2: random_card["attacks"][1]["damage"].to_i, deck: deck2)
+    
 end
 # byebug
 

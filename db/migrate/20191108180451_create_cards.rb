@@ -6,8 +6,8 @@ class CreateCards < ActiveRecord::Migration[6.0]
       t.integer :hp
       t.string :attack_name
       t.integer :attack_damage
-      t.string :attack_name_2
-      t.integer :attack_damage_2
+      t.string :attack_name_2, :default => "No Second Attack"
+      t.integer :attack_damage_2, :default => 0
       
       t.integer :deck_id
 
