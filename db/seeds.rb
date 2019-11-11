@@ -29,10 +29,16 @@ deck2_cards = JSON.parse(raw_cards_deck2)
 
 60.times do
     random_card = deck1_cards["cards"].sample
-    Card.create!(name: random_card["name"], imageUrl: random_card["imageUrlHiRes"], hp: random_card["hp"].to_i, deck: deck1)
+    Card.create!(name: random_card["name"], imageUrl: random_card["imageUrlHiRes"], hp: random_card["hp"].to_i, attack_name: random_card["attacks"][0]["name"], attack_damage: random_card["attacks"][0]["damage"].to_i, deck: deck1)
 end
 
 60.times do
     random_card = deck2_cards["cards"].sample
-    Card.create!(name: random_card["name"], imageUrl: random_card["imageUrlHiRes"], hp: random_card["hp"].to_i, deck: deck2)
-end
+    Card.create!(name: random_card["name"], imageUrl: random_card["imageUrlHiRes"], hp: random_card["hp"].to_i, attack_name: random_card["attacks"][0]["name"], attack_damage: random_card["attacks"][0]["damage"].to_i, deck: deck2)
+
+# byebug
+
+# 60.times do
+#     random_card = cards["cards"].sample
+#     Card.create!(name: random_card["name"], imageUrl: random_card["imageUrlHiRes"], hp: random_card["hp"].to_i, attack_name: random_card["attacks"][0]["name"], attack_damage: random_card["attacks"][0]["damage"].to_i, deck: deck1)
+# end

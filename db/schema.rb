@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(version: 2019_11_08_180451) do
     t.string "name"
     t.string "imageUrl"
     t.integer "hp"
+    t.string "attack_name"
+    t.integer "attack_damage"
     t.integer "deck_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
