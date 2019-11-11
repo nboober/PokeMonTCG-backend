@@ -54,9 +54,3 @@ end
     attack_name_2: random_card["attacks"][1]["name"], attack_damage_2: random_card["attacks"][1]["damage"].to_i, deck: deck2)
     
 end
-# byebug
-
-# 60.times do
-#     random_card = cards["cards"].sample
-#     Card.create!(name: random_card["name"], imageUrl: random_card["imageUrlHiRes"], hp: random_card["hp"].to_i, attack_name: random_card["attacks"][0]["name"], attack_damage: random_card["attacks"][0]["damage"].to_i, deck: deck1)
-# end
