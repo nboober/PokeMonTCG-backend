@@ -13,12 +13,26 @@ Deck.destroy_all
 Card.destroy_all
 
 user1 = User.create(name: "Nick")
-deck1 = Deck.create!(name: "Fire and Electic Starter Deck", user: user1)
-raw_cards = RestClient.get('https://api.pokemontcg.io/v1/cards?types=fire|lightning')
-cards = JSON.parse(raw_cards)
+
+deck1 = Deck.create!(name: "Fire and Electric Starter Deck", user: user1)
+deck2 = Deck.create!(name: "Grass and Psychic Starter Deck", user: user1)
+
+raw_cards_deck1 = RestClient.get('https://api.pokemontcg.io/v1/cards?types=fire|lightning')
+deck1_cards = JSON.parse(raw_cards_deck1)
+
+raw_cards_deck2 = RestClient.get('https://api.pokemontcg.io/v1/cards?types=psychic|grass')
+deck2_cards = JSON.parse(raw_cards_deck2)
+
+
+
 # byebug
 
 60.times do
-    random_card = cards["cards"].sample
+    random_card = deck1_cards["cards"].sample
     Card.create!(name: random_card["name"], imageUrl: random_card["imageUrlHiRes"], hp: random_card["hp"].to_i, deck: deck1)
+end
+
+60.times do
+    random_card = deck2_cards["cards"].sample
+    Card.create!(name: random_card["name"], imageUrl: random_card["imageUrlHiRes"], hp: random_card["hp"].to_i, deck: deck2)
 end
