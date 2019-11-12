@@ -5508,3 +5508,155 @@ Processing by DecksController#show as */*
 Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 11551)
 
 
+Started GET "/users" for ::1 at 2019-11-11 17:16:30 -0500
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (1.4ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (1.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 3]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 4]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 127ms (Views: 0.2ms | ActiveRecord: 8.9ms | Allocations: 46114)
+
+
+Started GET "/decks/4" for ::1 at 2019-11-11 17:16:33 -0500
+Processing by DecksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:4:in `show'
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 4]]
+  ↳ app/controllers/decks_controller.rb:6:in `show'
+Completed 200 OK in 29ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 11673)
+
+
+Started GET "/cards/144" for ::1 at 2019-11-11 17:16:39 -0500
+Processing by CardsController#show as */*
+  Parameters: {"id"=>"144"}
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 144], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:4:in `show'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 904)
+
+
+Started GET "/decks/4" for ::1 at 2019-11-11 17:16:45 -0500
+Processing by DecksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:4:in `show'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 4]]
+  ↳ app/controllers/decks_controller.rb:6:in `show'
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 11525)
+
+
+Started GET "/cards/173" for ::1 at 2019-11-11 17:16:51 -0500
+Processing by CardsController#show as */*
+  Parameters: {"id"=>"173"}
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 173], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:4:in `show'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 751)
+
+
+Started GET "/decks/4" for ::1 at 2019-11-11 17:16:53 -0500
+Processing by DecksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:4:in `show'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 4]]
+  ↳ app/controllers/decks_controller.rb:6:in `show'
+Completed 200 OK in 45ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 11512)
+
+
+Started GET "/decks/4" for ::1 at 2019-11-11 17:16:56 -0500
+Processing by DecksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:4:in `show'
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 4]]
+  ↳ app/controllers/decks_controller.rb:6:in `show'
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 11509)
+
+
+Started GET "/decks/4" for ::1 at 2019-11-11 17:16:58 -0500
+Processing by DecksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:4:in `show'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 4]]
+  ↳ app/controllers/decks_controller.rb:6:in `show'
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 11509)
+
+
+Started GET "/decks/4" for ::1 at 2019-11-11 17:17:00 -0500
+Processing by DecksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:4:in `show'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 4]]
+  ↳ app/controllers/decks_controller.rb:6:in `show'
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 11509)
+
+
+Started GET "/decks/4" for ::1 at 2019-11-11 17:17:07 -0500
+Processing by DecksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:4:in `show'
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 4]]
+  ↳ app/controllers/decks_controller.rb:6:in `show'
+Completed 200 OK in 44ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 11510)
+
+
+Started GET "/users" for ::1 at 2019-11-11 17:17:07 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 3]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 4]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 74ms (Views: 0.1ms | ActiveRecord: 1.9ms | Allocations: 23713)
+
+
+Started GET "/users" for ::1 at 2019-11-12 08:42:41 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (1.3ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (1.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 3]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.9ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 4]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 65ms (Views: 0.9ms | ActiveRecord: 5.7ms | Allocations: 23774)
+
+
+Started GET "/users" for ::1 at 2019-11-12 09:03:35 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (1.7ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (2.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 3]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 4]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 54ms (Views: 0.2ms | ActiveRecord: 7.6ms | Allocations: 23771)
+
+
+Started GET "/decks/3" for ::1 at 2019-11-12 09:03:36 -0500
+Processing by DecksController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:4:in `show'
+  [1m[36mCard Load (1.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 3]]
+  ↳ app/controllers/decks_controller.rb:6:in `show'
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 11650)
+
+
