@@ -12,7 +12,8 @@ User.destroy_all
 Deck.destroy_all
 Card.destroy_all
 
-user1 = User.create(name: "Nick")
+user1 = User.create(name: "Nick", password: "poke", username: "nboober")
+user2 = User.create(name: "Khaled", password: "poke", username: "khassan")
 
 deck1 = Deck.create!(name: "Fire and Electric Starter Deck", user: user1)
 deck2 = Deck.create!(name: "Grass and Psychic Starter Deck", user: user1)
