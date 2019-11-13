@@ -15,6 +15,12 @@ Card.destroy_all
 
 user1 = User.create(name: "Nick", password: "poke", username: "nboober")
 user2 = User.create(name: "Khaled", password: "poke", username: "khassan")
+user3 = User.create(name: "Sergio", password: "poke", username: "sperez")
+user4 = User.create(name: "Charlie", password: "poke", username: "cchung")
+user5 = User.create(name: "Heejae", password: "poke", username: "hhan")
+user6 = User.create(name: "Mickey", password: "poke", username: "mpartlow")
+user7 = User.create(name: "Tiffany", password: "poke", username: "tabraham")
+user8 = User.create(name: "David", password: "poke", username: "dfellows")
 
 # user1 = User.create(name: "Nick", password: "poke", username: "nboober")
 # user2 = User.create(name: "Khaled", password: "poke", username: "khassan")
