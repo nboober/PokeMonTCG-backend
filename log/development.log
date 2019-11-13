@@ -27029,3 +27029,1701 @@ Processing by CardsController#show as */*
 Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 743)
 
 
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 8]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDeck Destroy (0.3ms)[0m  [1m[31mDELETE FROM "decks" WHERE "decks"."id" = ?[0m  [["id", 20]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCard Load (1.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.6ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 614]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 615]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 616]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 617]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 618]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 619]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.7ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 620]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (1.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 621]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 622]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 623]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 624]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 625]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 626]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 627]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 628]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 629]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 630]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 631]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 632]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.7ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 633]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 634]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 635]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 636]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 637]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 638]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 639]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 640]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 641]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.7ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 642]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 643]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 644]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 645]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 646]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.6ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 647]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 648]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 649]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (1.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 650]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 651]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 652]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 653]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 654]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 655]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 656]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 657]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 658]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 659]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 660]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 661]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 662]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.6ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 663]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 664]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.6ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 665]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 666]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 667]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 668]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 669]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 670]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 671]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 672]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 673]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "username", "password") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nick"], ["created_at", "2019-11-13 19:31:02.070423"], ["updated_at", "2019-11-13 19:31:02.070423"], ["username", "nboober"], ["password", "poke"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "username", "password") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Khaled"], ["created_at", "2019-11-13 19:31:02.077316"], ["updated_at", "2019-11-13 19:31:02.077316"], ["username", "khassan"], ["password", "poke"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users" for ::1 at 2019-11-13 14:31:17 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.9ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 9]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 10]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 58ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 11115)
+
+
+Started POST "/decks" for ::1 at 2019-11-13 14:31:32 -0500
+Processing by DecksController#create as JSON
+  Parameters: {"user_id"=>9, "type1"=>"grass", "type2"=>"water", "deck_name"=>"Grass and Water", "deck"=>{"user_id"=>9}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[36mDeck Create (0.9ms)[0m  [1m[32mINSERT INTO "decks" ("name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Grass and Water"], ["user_id", 9], ["created_at", "2019-11-13 19:31:32.972989"], ["updated_at", "2019-11-13 19:31:32.972989"]]
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Spheal"], ["imageUrl", "https://images.pokemontcg.io/ex16/65_hires.png"], ["hp", 40], ["attack_name", "Defense Curl"], ["attack_damage", 0], ["attack_name_2", "Aurora Beam"], ["attack_damage_2", 20], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.387364"], ["updated_at", "2019-11-13 19:31:33.387364"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Meganium"], ["imageUrl", "https://images.pokemontcg.io/ex10/9_hires.png"], ["hp", 100], ["attack_name", "Bouncy Move"], ["attack_damage", 50], ["attack_name_2", nil], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.399707"], ["updated_at", "2019-11-13 19:31:33.399707"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.0ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Slowbro"], ["imageUrl", "https://images.pokemontcg.io/hgss3/38_hires.png"], ["hp", 90], ["attack_name", "Full-Belly Refresh"], ["attack_damage", 0], ["attack_name_2", "Startling Trip"], ["attack_damage_2", 50], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.408002"], ["updated_at", "2019-11-13 19:31:33.408002"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sandshrew"], ["imageUrl", "https://images.pokemontcg.io/ex11/82_hires.png"], ["hp", 50], ["attack_name", "Dig Under"], ["attack_damage", 0], ["attack_name_2", "Scratch"], ["attack_damage_2", 20], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.419673"], ["updated_at", "2019-11-13 19:31:33.419673"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Omanyte"], ["imageUrl", "https://images.pokemontcg.io/dp5/69_hires.png"], ["hp", 70], ["attack_name", "Wash Over"], ["attack_damage", 20], ["attack_name_2", nil], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.453457"], ["updated_at", "2019-11-13 19:31:33.453457"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (9.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chesnaught"], ["imageUrl", "https://images.pokemontcg.io/xy1/14_hires.png"], ["hp", 160], ["attack_name", "Touchdown"], ["attack_damage", 90], ["attack_name_2", nil], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.468215"], ["updated_at", "2019-11-13 19:31:33.468215"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Venusaur-EX"], ["imageUrl", "https://images.pokemontcg.io/xy1/1_hires.png"], ["hp", 180], ["attack_name", "Poison Powder"], ["attack_damage", 60], ["attack_name_2", "Jungle Hammer"], ["attack_damage_2", 90], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.487948"], ["updated_at", "2019-11-13 19:31:33.487948"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Spheal"], ["imageUrl", "https://images.pokemontcg.io/ex16/65_hires.png"], ["hp", 40], ["attack_name", "Defense Curl"], ["attack_damage", 0], ["attack_name_2", "Aurora Beam"], ["attack_damage_2", 20], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.494754"], ["updated_at", "2019-11-13 19:31:33.494754"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Turtwig"], ["imageUrl", "https://images.pokemontcg.io/pop9/17_hires.png"], ["hp", 60], ["attack_name", "Absorb"], ["attack_damage", 10], ["attack_name_2", "Parboil"], ["attack_damage_2", 40], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.505542"], ["updated_at", "2019-11-13 19:31:33.505542"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Weezing"], ["imageUrl", "https://images.pokemontcg.io/ex11/33_hires.png"], ["hp", 70], ["attack_name", "Mist Attack"], ["attack_damage", 0], ["attack_name_2", "Sludge Whirlpool"], ["attack_damage_2", 50], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.518929"], ["updated_at", "2019-11-13 19:31:33.518929"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pineco"], ["imageUrl", "https://images.pokemontcg.io/dp6/113_hires.png"], ["hp", 50], ["attack_name", "Tackle"], ["attack_damage", 10], ["attack_name_2", "Selfdestruct"], ["attack_damage_2", 40], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.526852"], ["updated_at", "2019-11-13 19:31:33.526852"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mudkip"], ["imageUrl", "https://images.pokemontcg.io/ex3/65_hires.png"], ["hp", 50], ["attack_name", "Water Gun"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.539641"], ["updated_at", "2019-11-13 19:31:33.539641"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lotad"], ["imageUrl", "https://images.pokemontcg.io/ex2/67_hires.png"], ["hp", 50], ["attack_name", "Tackle"], ["attack_damage", 10], ["attack_name_2", "Blot"], ["attack_damage_2", 20], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.546110"], ["updated_at", "2019-11-13 19:31:33.546110"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.0ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Spheal"], ["imageUrl", "https://images.pokemontcg.io/ex16/65_hires.png"], ["hp", 40], ["attack_name", "Defense Curl"], ["attack_damage", 0], ["attack_name_2", "Aurora Beam"], ["attack_damage_2", 20], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.558498"], ["updated_at", "2019-11-13 19:31:33.558498"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Leafeon"], ["imageUrl", "https://images.pokemontcg.io/bw5/6_hires.png"], ["hp", 90], ["attack_name", "Quick Attack"], ["attack_damage", 10], ["attack_name_2", "Energy Assist"], ["attack_damage_2", 40], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.572203"], ["updated_at", "2019-11-13 19:31:33.572203"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Kakuna"], ["imageUrl", "https://images.pokemontcg.io/xy1/4_hires.png"], ["hp", 70], ["attack_name", "Harden"], ["attack_damage", 0], ["attack_name_2", nil], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.589965"], ["updated_at", "2019-11-13 19:31:33.589965"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Koffing"], ["imageUrl", "https://images.pokemontcg.io/ex11/72_hires.png"], ["hp", 50], ["attack_name", "Confusion Gas"], ["attack_damage", 0], ["attack_name_2", "Ram"], ["attack_damage_2", 20], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.604319"], ["updated_at", "2019-11-13 19:31:33.604319"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Floatzel"], ["imageUrl", "https://images.pokemontcg.io/dp1/26_hires.png"], ["hp", 90], ["attack_name", "Screw Tail"], ["attack_damage", 30], ["attack_name_2", "Water Gun"], ["attack_damage_2", 40], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.611006"], ["updated_at", "2019-11-13 19:31:33.611006"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Kakuna"], ["imageUrl", "https://images.pokemontcg.io/xy1/4_hires.png"], ["hp", 70], ["attack_name", "Harden"], ["attack_damage", 0], ["attack_name_2", nil], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.622060"], ["updated_at", "2019-11-13 19:31:33.622060"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Staryu"], ["imageUrl", "https://images.pokemontcg.io/ex11/85_hires.png"], ["hp", 50], ["attack_name", "Surprise Attack"], ["attack_damage", 20], ["attack_name_2", "Recover"], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.628671"], ["updated_at", "2019-11-13 19:31:33.628671"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Omanyte"], ["imageUrl", "https://images.pokemontcg.io/ex16/56_hires.png"], ["hp", 70], ["attack_name", "Influence"], ["attack_damage", 0], ["attack_name_2", "Mud Shot"], ["attack_damage_2", 20], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.639772"], ["updated_at", "2019-11-13 19:31:33.639772"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sandshrew"], ["imageUrl", "https://images.pokemontcg.io/ex11/82_hires.png"], ["hp", 50], ["attack_name", "Dig Under"], ["attack_damage", 0], ["attack_name_2", "Scratch"], ["attack_damage_2", 20], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.645623"], ["updated_at", "2019-11-13 19:31:33.645623"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Greninja"], ["imageUrl", "https://images.pokemontcg.io/det1/9_hires.png"], ["hp", 140], ["attack_name", "Furious Shurikens"], ["attack_damage", 0], ["attack_name_2", nil], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.658533"], ["updated_at", "2019-11-13 19:31:33.658533"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Feebas"], ["imageUrl", "https://images.pokemontcg.io/xy5/43_hires.png"], ["hp", 30], ["attack_name", "Float On"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.670466"], ["updated_at", "2019-11-13 19:31:33.670466"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (2.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cacnea"], ["imageUrl", "https://images.pokemontcg.io/ex16/46_hires.png"], ["hp", 50], ["attack_name", "Feint Attack"], ["attack_damage", 0], ["attack_name_2", nil], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.676698"], ["updated_at", "2019-11-13 19:31:33.676698"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Floatzel"], ["imageUrl", "https://images.pokemontcg.io/dp1/26_hires.png"], ["hp", 90], ["attack_name", "Screw Tail"], ["attack_damage", 30], ["attack_name_2", "Water Gun"], ["attack_damage_2", 40], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.690740"], ["updated_at", "2019-11-13 19:31:33.690740"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beedrill δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/1_hires.png"], ["hp", 90], ["attack_name", "Super Slash"], ["attack_damage", 50], ["attack_name_2", nil], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.699681"], ["updated_at", "2019-11-13 19:31:33.699681"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cacnea"], ["imageUrl", "https://images.pokemontcg.io/ex16/46_hires.png"], ["hp", 50], ["attack_name", "Feint Attack"], ["attack_damage", 0], ["attack_name_2", nil], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.709966"], ["updated_at", "2019-11-13 19:31:33.709966"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Heracross"], ["imageUrl", "https://images.pokemontcg.io/dp1/28_hires.png"], ["hp", 80], ["attack_name", "Pitch"], ["attack_damage", 10], ["attack_name_2", "Horn Slash"], ["attack_damage_2", 30], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.721163"], ["updated_at", "2019-11-13 19:31:33.721163"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Spheal"], ["imageUrl", "https://images.pokemontcg.io/ex16/65_hires.png"], ["hp", 40], ["attack_name", "Defense Curl"], ["attack_damage", 0], ["attack_name_2", "Aurora Beam"], ["attack_damage_2", 20], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.727350"], ["updated_at", "2019-11-13 19:31:33.727350"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tangela"], ["imageUrl", "https://images.pokemontcg.io/xy5/4_hires.png"], ["hp", 80], ["attack_name", "Absorb"], ["attack_damage", 20], ["attack_name_2", "Vine Whip"], ["attack_damage_2", 30], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.739645"], ["updated_at", "2019-11-13 19:31:33.739645"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (2.1ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Koffing"], ["imageUrl", "https://images.pokemontcg.io/base1/51_hires.png"], ["hp", 50], ["attack_name", "Foul Gas"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.748282"], ["updated_at", "2019-11-13 19:31:33.748282"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Glalie"], ["imageUrl", "https://images.pokemontcg.io/ex16/30_hires.png"], ["hp", 80], ["attack_name", "Powder Snow"], ["attack_damage", 20], ["attack_name_2", "Double-edge"], ["attack_damage_2", 60], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.758152"], ["updated_at", "2019-11-13 19:31:33.758152"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Illumise"], ["imageUrl", "https://images.pokemontcg.io/xy1/9_hires.png"], ["hp", 70], ["attack_name", "Pheromotion"], ["attack_damage", 0], ["attack_name_2", "Quick Attack"], ["attack_damage_2", 20], ["deck_id", 21], ["created_at", "2019-11-13 19:31:33.769194"], ["updated_at", "2019-11-13 19:31:33.769194"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+Completed 500 Internal Server Error in 833ms (ActiveRecord: 151.9ms | Allocations: 112922)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/decks_controller.rb:19:in `block in create'
+app/controllers/decks_controller.rb:14:in `times'
+app/controllers/decks_controller.rb:14:in `create'
+Started GET "/users" for ::1 at 2019-11-13 14:31:41 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 9]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (1.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 21]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 10]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 2.0ms | Allocations: 9323)
+
+
+Started GET "/decks/21" for ::1 at 2019-11-13 14:31:49 -0500
+Processing by DecksController#show as */*
+  Parameters: {"id"=>"21"}
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:30:in `show'
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 21]]
+  ↳ app/controllers/decks_controller.rb:32:in `show'
+Completed 200 OK in 36ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 7290)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (1.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 9]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 10]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDeck Destroy (0.5ms)[0m  [1m[31mDELETE FROM "decks" WHERE "decks"."id" = ?[0m  [["id", 21]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCard Load (16.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 674]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 675]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 676]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 677]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 678]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 679]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.6ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 680]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 681]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.6ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 682]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 683]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 684]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 685]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 686]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 687]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 688]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 689]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 690]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.8ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 691]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 692]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.6ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 693]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 694]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 695]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 696]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 697]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 698]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.4ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 699]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 700]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 701]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 702]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 703]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.2ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 704]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 705]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 706]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCard Destroy (0.3ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = ?[0m  [["id", 707]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "username", "password") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Nick"], ["created_at", "2019-11-13 19:35:07.457504"], ["updated_at", "2019-11-13 19:35:07.457504"], ["username", "nboober"], ["password", "poke"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "username", "password") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Khaled"], ["created_at", "2019-11-13 19:35:07.463994"], ["updated_at", "2019-11-13 19:35:07.463994"], ["username", "khassan"], ["password", "poke"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users" for ::1 at 2019-11-13 14:35:27 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 11]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 12]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 52ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 11115)
+
+
+Started POST "/decks" for ::1 at 2019-11-13 14:35:35 -0500
+Processing by DecksController#create as JSON
+  Parameters: {"user_id"=>11, "type1"=>"fire", "type2"=>"fire", "deck_name"=>"Fire", "deck"=>{"user_id"=>11}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[36mDeck Create (0.7ms)[0m  [1m[32mINSERT INTO "decks" ("name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Fire"], ["user_id", 11], ["created_at", "2019-11-13 19:35:35.334890"], ["updated_at", "2019-11-13 19:35:35.334890"]]
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ponyta"], ["imageUrl", "https://images.pokemontcg.io/dp1/94_hires.png"], ["hp", 60], ["attack_name", "Tackle"], ["attack_damage", 10], ["attack_name_2", "Flame Tail"], ["attack_damage_2", 30], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.787758"], ["updated_at", "2019-11-13 19:35:35.787758"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ninetales"], ["imageUrl", "https://images.pokemontcg.io/bw11/21_hires.png"], ["hp", 90], ["attack_name", "Color Coordination"], ["attack_damage", 50], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.795264"], ["updated_at", "2019-11-13 19:35:35.795264"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Numel"], ["imageUrl", "https://images.pokemontcg.io/ex3/69_hires.png"], ["hp", 40], ["attack_name", "Firebreathing"], ["attack_damage", 10], ["attack_name_2", "Tackle"], ["attack_damage_2", 20], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.800955"], ["updated_at", "2019-11-13 19:35:35.800955"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Reshiram"], ["imageUrl", "https://images.pokemontcg.io/bw11/28_hires.png"], ["hp", 130], ["attack_name", "Outrage"], ["attack_damage", 20], ["attack_name_2", "Blue Flare"], ["attack_damage_2", 120], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.809933"], ["updated_at", "2019-11-13 19:35:35.809933"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charmander"], ["imageUrl", "https://images.pokemontcg.io/base1/46_hires.png"], ["hp", 50], ["attack_name", "Scratch"], ["attack_damage", 10], ["attack_name_2", "Ember"], ["attack_damage_2", 30], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.817447"], ["updated_at", "2019-11-13 19:35:35.817447"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Darumaka"], ["imageUrl", "https://images.pokemontcg.io/bw2/20_hires.png"], ["hp", 70], ["attack_name", "Tackle"], ["attack_damage", 10], ["attack_name_2", "Combustion"], ["attack_damage_2", 30], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.826745"], ["updated_at", "2019-11-13 19:35:35.826745"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (2.2ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Slugma"], ["imageUrl", "https://images.pokemontcg.io/hgss3/67_hires.png"], ["hp", 60], ["attack_name", "Combustion"], ["attack_damage", 40], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.835885"], ["updated_at", "2019-11-13 19:35:35.835885"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Litten"], ["imageUrl", "https://images.pokemontcg.io/sm1/24_hires.png"], ["hp", 70], ["attack_name", "Bite"], ["attack_damage", 10], ["attack_name_2", "Flare"], ["attack_damage_2", 20], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.845699"], ["updated_at", "2019-11-13 19:35:35.845699"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charmander"], ["imageUrl", "https://images.pokemontcg.io/base1/46_hires.png"], ["hp", 50], ["attack_name", "Scratch"], ["attack_damage", 10], ["attack_name_2", "Ember"], ["attack_damage_2", 30], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.856517"], ["updated_at", "2019-11-13 19:35:35.856517"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Numel"], ["imageUrl", "https://images.pokemontcg.io/pl3/74_hires.png"], ["hp", 70], ["attack_name", "Draw In"], ["attack_damage", 0], ["attack_name_2", "Combustion"], ["attack_damage_2", 40], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.864408"], ["updated_at", "2019-11-13 19:35:35.864408"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.2ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Slugma"], ["imageUrl", "https://images.pokemontcg.io/ex8/75_hires.png"], ["hp", 50], ["attack_name", "Magma Ring"], ["attack_damage", 10], ["attack_name_2", "Flare"], ["attack_damage_2", 20], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.871717"], ["updated_at", "2019-11-13 19:35:35.871717"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Simisear"], ["imageUrl", "https://images.pokemontcg.io/bw3/17_hires.png"], ["hp", 90], ["attack_name", "Scratch"], ["attack_damage", 20], ["attack_name_2", "Double Fire"], ["attack_damage_2", 80], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.879909"], ["updated_at", "2019-11-13 19:35:35.879909"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magmar"], ["imageUrl", "https://images.pokemontcg.io/col1/62_hires.png"], ["hp", 70], ["attack_name", "Live Coal"], ["attack_damage", 10], ["attack_name_2", "Magma Punch"], ["attack_damage_2", 20], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.887842"], ["updated_at", "2019-11-13 19:35:35.887842"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charizard"], ["imageUrl", "https://images.pokemontcg.io/pl4/1_hires.png"], ["hp", 140], ["attack_name", "Fire Wing"], ["attack_damage", 30], ["attack_name_2", "Burning Tail"], ["attack_damage_2", 80], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.895396"], ["updated_at", "2019-11-13 19:35:35.895396"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charizard"], ["imageUrl", "https://images.pokemontcg.io/pl4/1_hires.png"], ["hp", 140], ["attack_name", "Fire Wing"], ["attack_damage", 30], ["attack_name_2", "Burning Tail"], ["attack_damage_2", 80], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.905300"], ["updated_at", "2019-11-13 19:35:35.905300"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Infernape"], ["imageUrl", "https://images.pokemontcg.io/dp1/5_hires.png"], ["hp", 100], ["attack_name", "Meteor Punch"], ["attack_damage", 30], ["attack_name_2", "Flare Blitz"], ["attack_damage_2", 90], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.916800"], ["updated_at", "2019-11-13 19:35:35.916800"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Camerupt"], ["imageUrl", "https://images.pokemontcg.io/ex3/24_hires.png"], ["hp", 80], ["attack_name", "Super Singe"], ["attack_damage", 20], ["attack_name_2", "Ram"], ["attack_damage_2", 50], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.924001"], ["updated_at", "2019-11-13 19:35:35.924001"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.8ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Victini"], ["imageUrl", "https://images.pokemontcg.io/bw3/15_hires.png"], ["hp", 70], ["attack_name", "V-create"], ["attack_damage", 100], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.933028"], ["updated_at", "2019-11-13 19:35:35.933028"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cyndaquil"], ["imageUrl", "https://images.pokemontcg.io/dp2/79_hires.png"], ["hp", 60], ["attack_name", "Tackle"], ["attack_damage", 10], ["attack_name_2", "Live Coal"], ["attack_damage_2", 20], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.943805"], ["updated_at", "2019-11-13 19:35:35.943805"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Victini"], ["imageUrl", "https://images.pokemontcg.io/bw3/15_hires.png"], ["hp", 70], ["attack_name", "V-create"], ["attack_damage", 100], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.951891"], ["updated_at", "2019-11-13 19:35:35.951891"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Heracross δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/3_hires.png"], ["hp", 70], ["attack_name", "Dig Deep"], ["attack_damage", 0], ["attack_name_2", "Extra Claws"], ["attack_damage_2", 30], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.960790"], ["updated_at", "2019-11-13 19:35:35.960790"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magmar"], ["imageUrl", "https://images.pokemontcg.io/g1/16_hires.png"], ["hp", 80], ["attack_name", "Ram"], ["attack_damage", 10], ["attack_name_2", "Ember"], ["attack_damage_2", 30], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.969948"], ["updated_at", "2019-11-13 19:35:35.969948"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charizard"], ["imageUrl", "https://images.pokemontcg.io/ecard1/39_hires.png"], ["hp", 100], ["attack_name", "Tail Smash"], ["attack_damage", 0], ["attack_name_2", "Flamethrower"], ["attack_damage_2", 60], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.978793"], ["updated_at", "2019-11-13 19:35:35.978793"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pansear"], ["imageUrl", "https://images.pokemontcg.io/xy8/23_hires.png"], ["hp", 60], ["attack_name", "Fury Swipes"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.985018"], ["updated_at", "2019-11-13 19:35:35.985018"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magmortar"], ["imageUrl", "https://images.pokemontcg.io/col1/16_hires.png"], ["hp", 110], ["attack_name", "Hard Crush"], ["attack_damage", 50], ["attack_name_2", "Mantle Bazooka"], ["attack_damage_2", 100], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.993951"], ["updated_at", "2019-11-13 19:35:35.993951"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mewtwo δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/12_hires.png"], ["hp", 70], ["attack_name", "Energy Burst"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:35.999883"], ["updated_at", "2019-11-13 19:35:35.999883"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fletchinder"], ["imageUrl", "https://images.pokemontcg.io/xy1/27_hires.png"], ["hp", 70], ["attack_name", "Flame Charge"], ["attack_damage", 0], ["attack_name_2", "Fire Wing"], ["attack_damage_2", 30], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.011754"], ["updated_at", "2019-11-13 19:35:36.011754"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ho-Oh ex"], ["imageUrl", "https://images.pokemontcg.io/pop3/17_hires.png"], ["hp", 110], ["attack_name", "Rainbow Burn"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.017897"], ["updated_at", "2019-11-13 19:35:36.017897"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Torchic"], ["imageUrl", "https://images.pokemontcg.io/bw11/RC5_hires.png"], ["hp", 60], ["attack_name", "Peck"], ["attack_damage", 10], ["attack_name_2", "Live Coal"], ["attack_damage_2", 20], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.027640"], ["updated_at", "2019-11-13 19:35:36.027640"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charizard"], ["imageUrl", "https://images.pokemontcg.io/pl4/1_hires.png"], ["hp", 140], ["attack_name", "Fire Wing"], ["attack_damage", 30], ["attack_name_2", "Burning Tail"], ["attack_damage_2", 80], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.036867"], ["updated_at", "2019-11-13 19:35:36.036867"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Camerupt ex"], ["imageUrl", "https://images.pokemontcg.io/ex9/92_hires.png"], ["hp", 120], ["attack_name", "Searing Flame"], ["attack_damage", 30], ["attack_name_2", "Eruption"], ["attack_damage_2", 60], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.046160"], ["updated_at", "2019-11-13 19:35:36.046160"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Torchic"], ["imageUrl", "https://images.pokemontcg.io/bw11/RC5_hires.png"], ["hp", 60], ["attack_name", "Peck"], ["attack_damage", 10], ["attack_name_2", "Live Coal"], ["attack_damage_2", 20], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.059263"], ["updated_at", "2019-11-13 19:35:36.059263"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ponyta"], ["imageUrl", "https://images.pokemontcg.io/dp1/94_hires.png"], ["hp", 60], ["attack_name", "Tackle"], ["attack_damage", 10], ["attack_name_2", "Flame Tail"], ["attack_damage_2", 30], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.071036"], ["updated_at", "2019-11-13 19:35:36.071036"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Litten"], ["imageUrl", "https://images.pokemontcg.io/sm1/24_hires.png"], ["hp", 70], ["attack_name", "Bite"], ["attack_damage", 10], ["attack_name_2", "Flare"], ["attack_damage_2", 20], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.085603"], ["updated_at", "2019-11-13 19:35:36.085603"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magmar"], ["imageUrl", "https://images.pokemontcg.io/bw6/20_hires.png"], ["hp", 80], ["attack_name", "Beat"], ["attack_damage", 10], ["attack_name_2", "Magma Punch"], ["attack_damage_2", 50], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.094076"], ["updated_at", "2019-11-13 19:35:36.094076"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Torchic"], ["imageUrl", "https://images.pokemontcg.io/ex16/67_hires.png"], ["hp", 50], ["attack_name", "Super Singe"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.103540"], ["updated_at", "2019-11-13 19:35:36.103540"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vulpix"], ["imageUrl", "https://images.pokemontcg.io/hgss2/68_hires.png"], ["hp", 60], ["attack_name", "Fireworks"], ["attack_damage", 20], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.114508"], ["updated_at", "2019-11-13 19:35:36.114508"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ho-Oh ex"], ["imageUrl", "https://images.pokemontcg.io/pop3/17_hires.png"], ["hp", 110], ["attack_name", "Rainbow Burn"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.123044"], ["updated_at", "2019-11-13 19:35:36.123044"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rapidash"], ["imageUrl", "https://images.pokemontcg.io/ex11/52_hires.png"], ["hp", 70], ["attack_name", "Super Singe"], ["attack_damage", 0], ["attack_name_2", "Stomp"], ["attack_damage_2", 30], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.132797"], ["updated_at", "2019-11-13 19:35:36.132797"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Kirlia δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/33_hires.png"], ["hp", 70], ["attack_name", "Flickering Flames"], ["attack_damage", 20], ["attack_name_2", "Smack"], ["attack_damage_2", 40], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.148444"], ["updated_at", "2019-11-13 19:35:36.148444"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Slugma"], ["imageUrl", "https://images.pokemontcg.io/ex3/72_hires.png"], ["hp", 50], ["attack_name", "Ram"], ["attack_damage", 10], ["attack_name_2", "Luring Flame"], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.158661"], ["updated_at", "2019-11-13 19:35:36.158661"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charmander"], ["imageUrl", "https://images.pokemontcg.io/base1/46_hires.png"], ["hp", 50], ["attack_name", "Scratch"], ["attack_damage", 10], ["attack_name_2", "Ember"], ["attack_damage_2", 30], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.165398"], ["updated_at", "2019-11-13 19:35:36.165398"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charizard"], ["imageUrl", "https://images.pokemontcg.io/ex3/100_hires.png"], ["hp", 120], ["attack_name", "Collect Fire"], ["attack_damage", 30], ["attack_name_2", "Flame Pillar"], ["attack_damage_2", 60], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.188190"], ["updated_at", "2019-11-13 19:35:36.188190"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cyndaquil"], ["imageUrl", "https://images.pokemontcg.io/neo4/61_hires.png"], ["hp", 40], ["attack_name", "Smokescreen"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.197371"], ["updated_at", "2019-11-13 19:35:36.197371"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (2.2ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charmeleon"], ["imageUrl", "https://images.pokemontcg.io/ex6/31_hires.png"], ["hp", 70], ["attack_name", "Flare"], ["attack_damage", 30], ["attack_name_2", "Damage Burn"], ["attack_damage_2", 40], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.223278"], ["updated_at", "2019-11-13 19:35:36.223278"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charmander"], ["imageUrl", "https://images.pokemontcg.io/ex6/113_hires.png"], ["hp", 50], ["attack_name", "Flare"], ["attack_damage", 10], ["attack_name_2", "Rage"], ["attack_damage_2", 10], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.231819"], ["updated_at", "2019-11-13 19:35:36.231819"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.3ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Litten"], ["imageUrl", "https://images.pokemontcg.io/sm1/24_hires.png"], ["hp", 70], ["attack_name", "Bite"], ["attack_damage", 10], ["attack_name_2", "Flare"], ["attack_damage_2", 20], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.240777"], ["updated_at", "2019-11-13 19:35:36.240777"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Flareon"], ["imageUrl", "https://images.pokemontcg.io/col1/44_hires.png"], ["hp", 90], ["attack_name", "Flame Tail"], ["attack_damage", 30], ["attack_name_2", "Flamethrower"], ["attack_damage_2", 90], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.249946"], ["updated_at", "2019-11-13 19:35:36.249946"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Kirlia δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/33_hires.png"], ["hp", 70], ["attack_name", "Flickering Flames"], ["attack_damage", 20], ["attack_name_2", "Smack"], ["attack_damage_2", 40], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.264457"], ["updated_at", "2019-11-13 19:35:36.264457"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (2.2ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Camerupt"], ["imageUrl", "https://images.pokemontcg.io/ex3/24_hires.png"], ["hp", 80], ["attack_name", "Super Singe"], ["attack_damage", 20], ["attack_name_2", "Ram"], ["attack_damage_2", 50], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.272206"], ["updated_at", "2019-11-13 19:35:36.272206"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.9ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Milotic δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/5_hires.png"], ["hp", 90], ["attack_name", "Flare"], ["attack_damage", 60], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.280822"], ["updated_at", "2019-11-13 19:35:36.280822"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Slugma"], ["imageUrl", "https://images.pokemontcg.io/ex3/72_hires.png"], ["hp", 50], ["attack_name", "Ram"], ["attack_damage", 10], ["attack_name_2", "Luring Flame"], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.290223"], ["updated_at", "2019-11-13 19:35:36.290223"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Blaine's Ponyta"], ["imageUrl", "https://images.pokemontcg.io/gym2/64_hires.png"], ["hp", 50], ["attack_name", "Hind Kick"], ["attack_damage", 20], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.329953"], ["updated_at", "2019-11-13 19:35:36.329953"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Darumaka"], ["imageUrl", "https://images.pokemontcg.io/bw2/20_hires.png"], ["hp", 70], ["attack_name", "Tackle"], ["attack_damage", 10], ["attack_name_2", "Combustion"], ["attack_damage_2", 30], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.344621"], ["updated_at", "2019-11-13 19:35:36.344621"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.2ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pupitar δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/51_hires.png"], ["hp", 70], ["attack_name", "Paralyzing Gaze"], ["attack_damage", 0], ["attack_name_2", "Double-edge"], ["attack_damage_2", 40], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.351415"], ["updated_at", "2019-11-13 19:35:36.351415"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Combusken"], ["imageUrl", "https://images.pokemontcg.io/ex3/25_hires.png"], ["hp", 70], ["attack_name", "Quick Attack"], ["attack_damage", 10], ["attack_name_2", "Combustion"], ["attack_damage_2", 40], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.363650"], ["updated_at", "2019-11-13 19:35:36.363650"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Combusken"], ["imageUrl", "https://images.pokemontcg.io/ex3/25_hires.png"], ["hp", 70], ["attack_name", "Quick Attack"], ["attack_damage", 10], ["attack_name_2", "Combustion"], ["attack_damage_2", 40], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.377670"], ["updated_at", "2019-11-13 19:35:36.377670"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.9ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Numel"], ["imageUrl", "https://images.pokemontcg.io/ex3/70_hires.png"], ["hp", 50], ["attack_name", "Rollout"], ["attack_damage", 10], ["attack_name_2", "Kindle"], ["attack_damage_2", 10], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.386629"], ["updated_at", "2019-11-13 19:35:36.386629"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Charmander"], ["imageUrl", "https://images.pokemontcg.io/det1/4_hires.png"], ["hp", 60], ["attack_name", "Reckless Charge"], ["attack_damage", 20], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.397622"], ["updated_at", "2019-11-13 19:35:36.397622"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Bagon δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/58_hires.png"], ["hp", 50], ["attack_name", "Ember"], ["attack_damage", 30], ["attack_name_2", nil], ["deck_id", 22], ["created_at", "2019-11-13 19:35:36.407188"], ["updated_at", "2019-11-13 19:35:36.407188"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+Completed 204 No Content in 1107ms (ActiveRecord: 203.3ms | Allocations: 178372)
+
+
+Started GET "/users" for ::1 at 2019-11-13 14:36:14 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 11]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 22]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 12]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 23ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 13801)
+
+
+Started GET "/decks/22" for ::1 at 2019-11-13 14:36:16 -0500
+Processing by DecksController#show as */*
+  Parameters: {"id"=>"22"}
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:30:in `show'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 22]]
+  ↳ app/controllers/decks_controller.rb:32:in `show'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 0.5ms | Allocations: 11764)
+
+
+Started GET "/cards/756" for ::1 at 2019-11-13 14:36:31 -0500
+Processing by CardsController#show as */*
+  Parameters: {"id"=>"756"}
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = ? LIMIT ?[0m  [["id", 756], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:4:in `show'
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 904)
+
+
+Started GET "/users" for ::1 at 2019-11-13 14:36:46 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 11]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 22]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 12]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 13521)
+
+
+Started POST "/decks" for ::1 at 2019-11-13 14:36:53 -0500
+Processing by DecksController#create as JSON
+  Parameters: {"user_id"=>11, "type1"=>"grass", "type2"=>"water", "deck_name"=>"Grass and Water", "deck"=>{"user_id"=>11}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[36mDeck Create (0.9ms)[0m  [1m[32mINSERT INTO "decks" ("name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Grass and Water"], ["user_id", 11], ["created_at", "2019-11-13 19:36:53.729679"], ["updated_at", "2019-11-13 19:36:53.729679"]]
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vespiquen"], ["imageUrl", "https://images.pokemontcg.io/dp1/39_hires.png"], ["hp", 100], ["attack_name", "Leaf Honey"], ["attack_damage", 0], ["attack_name_2", "Attack Order"], ["attack_damage_2", 10], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.296295"], ["updated_at", "2019-11-13 19:36:54.296295"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (2.0ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Psyduck"], ["imageUrl", "https://images.pokemontcg.io/det1/7_hires.png"], ["hp", 80], ["attack_name", "Panic"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.301880"], ["updated_at", "2019-11-13 19:36:54.301880"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vileplume"], ["imageUrl", "https://images.pokemontcg.io/hgss3/24_hires.png"], ["hp", 120], ["attack_name", "Dazzling Pollen"], ["attack_damage", 50], ["attack_name_2", nil], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.313044"], ["updated_at", "2019-11-13 19:36:54.313044"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.9ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Wurmple"], ["imageUrl", "https://images.pokemontcg.io/dp1/104_hires.png"], ["hp", 50], ["attack_name", "Needling Sting"], ["attack_damage", 10], ["attack_name_2", "String Shot"], ["attack_damage_2", 10], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.320831"], ["updated_at", "2019-11-13 19:36:54.320831"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Weezing"], ["imageUrl", "https://images.pokemontcg.io/ex11/33_hires.png"], ["hp", 70], ["attack_name", "Mist Attack"], ["attack_damage", 0], ["attack_name_2", "Sludge Whirlpool"], ["attack_damage_2", 50], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.328932"], ["updated_at", "2019-11-13 19:36:54.328932"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Roserade"], ["imageUrl", "https://images.pokemontcg.io/dp1/13_hires.png"], ["hp", 90], ["attack_name", "Poison Sting"], ["attack_damage", 30], ["attack_name_2", "Spike Whip"], ["attack_damage_2", 50], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.335992"], ["updated_at", "2019-11-13 19:36:54.335992"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Horsea"], ["imageUrl", "https://images.pokemontcg.io/xy5/30_hires.png"], ["hp", 60], ["attack_name", "Bubble"], ["attack_damage", 0], ["attack_name_2", nil], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.344011"], ["updated_at", "2019-11-13 19:36:54.344011"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Palkia"], ["imageUrl", "https://images.pokemontcg.io/dp1/11_hires.png"], ["hp", 90], ["attack_name", "Spacial Rend"], ["attack_damage", 10], ["attack_name_2", "Transback"], ["attack_damage_2", 40], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.353824"], ["updated_at", "2019-11-13 19:36:54.353824"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Starmie"], ["imageUrl", "https://images.pokemontcg.io/ex8/48_hires.png"], ["hp", 70], ["attack_name", "Energy Flip"], ["attack_damage", 0], ["attack_name_2", "Psychic Boom"], ["attack_damage_2", 10], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.363502"], ["updated_at", "2019-11-13 19:36:54.363502"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Morelull"], ["imageUrl", "https://images.pokemontcg.io/det1/3_hires.png"], ["hp", 50], ["attack_name", "Sleep Spore"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.375467"], ["updated_at", "2019-11-13 19:36:54.375467"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Staryu"], ["imageUrl", "https://images.pokemontcg.io/ex11/85_hires.png"], ["hp", 50], ["attack_name", "Surprise Attack"], ["attack_damage", 20], ["attack_name_2", "Recover"], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.385853"], ["updated_at", "2019-11-13 19:36:54.385853"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.9ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Seedot"], ["imageUrl", "https://images.pokemontcg.io/ex16/60_hires.png"], ["hp", 40], ["attack_name", "Nap"], ["attack_damage", 0], ["attack_name_2", "Double Spin"], ["attack_damage_2", 20], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.397888"], ["updated_at", "2019-11-13 19:36:54.397888"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Togetic δ"], ["imageUrl", "https://images.pokemontcg.io/ex15/11_hires.png"], ["hp", 60], ["attack_name", "Delta Copy"], ["attack_damage", 0], ["attack_name_2", "Wave Splash"], ["attack_damage_2", 30], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.415847"], ["updated_at", "2019-11-13 19:36:54.415847"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.9ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Spheal"], ["imageUrl", "https://images.pokemontcg.io/ex16/65_hires.png"], ["hp", 40], ["attack_name", "Defense Curl"], ["attack_damage", 0], ["attack_name_2", "Aurora Beam"], ["attack_damage_2", 20], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.451316"], ["updated_at", "2019-11-13 19:36:54.451316"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Manaphy"], ["imageUrl", "https://images.pokemontcg.io/dp1/9_hires.png"], ["hp", 70], ["attack_name", "Call for Family"], ["attack_damage", 0], ["attack_name_2", "Aqua Ring"], ["attack_damage_2", 30], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.462431"], ["updated_at", "2019-11-13 19:36:54.462431"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Seedot"], ["imageUrl", "https://images.pokemontcg.io/ex16/60_hires.png"], ["hp", 40], ["attack_name", "Nap"], ["attack_damage", 0], ["attack_name_2", "Double Spin"], ["attack_damage_2", 20], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.473185"], ["updated_at", "2019-11-13 19:36:54.473185"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.0ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Venonat"], ["imageUrl", "https://images.pokemontcg.io/sm10/10_hires.png"], ["hp", 60], ["attack_name", "Psybeam"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.483990"], ["updated_at", "2019-11-13 19:36:54.483990"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beedrill δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/1_hires.png"], ["hp", 90], ["attack_name", "Super Slash"], ["attack_damage", 50], ["attack_name_2", nil], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.498819"], ["updated_at", "2019-11-13 19:36:54.498819"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Starmie δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/15_hires.png"], ["hp", 60], ["attack_name", "Collect"], ["attack_damage", 0], ["attack_name_2", "Energy Loop"], ["attack_damage_2", 30], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.508176"], ["updated_at", "2019-11-13 19:36:54.508176"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Feebas"], ["imageUrl", "https://images.pokemontcg.io/xy5/43_hires.png"], ["hp", 30], ["attack_name", "Float On"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.520905"], ["updated_at", "2019-11-13 19:36:54.520905"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vileplume"], ["imageUrl", "https://images.pokemontcg.io/sm10/8_hires.png"], ["hp", 140], ["attack_name", "Giant Bloom"], ["attack_damage", 90], ["attack_name_2", nil], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.532496"], ["updated_at", "2019-11-13 19:36:54.532496"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Prinplup"], ["imageUrl", "https://images.pokemontcg.io/dp1/58_hires.png"], ["hp", 80], ["attack_name", "Aqua Shower"], ["attack_damage", 0], ["attack_name_2", "Brine"], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.539095"], ["updated_at", "2019-11-13 19:36:54.539095"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Snorunt"], ["imageUrl", "https://images.pokemontcg.io/ex16/64_hires.png"], ["hp", 50], ["attack_name", "Pebble Throw"], ["attack_damage", 0], ["attack_name_2", "Double Headbutt"], ["attack_damage_2", 20], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.547280"], ["updated_at", "2019-11-13 19:36:54.547280"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (2.9ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Venonat"], ["imageUrl", "https://images.pokemontcg.io/sm10/10_hires.png"], ["hp", 60], ["attack_name", "Psybeam"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.555094"], ["updated_at", "2019-11-13 19:36:54.555094"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Seedot"], ["imageUrl", "https://images.pokemontcg.io/ex8/71_hires.png"], ["hp", 40], ["attack_name", "Collect"], ["attack_damage", 0], ["attack_name_2", "Quick Attack"], ["attack_damage_2", 10], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.564660"], ["updated_at", "2019-11-13 19:36:54.564660"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Omanyte"], ["imageUrl", "https://images.pokemontcg.io/ex16/56_hires.png"], ["hp", 70], ["attack_name", "Influence"], ["attack_damage", 0], ["attack_name_2", "Mud Shot"], ["attack_damage_2", 20], ["deck_id", 23], ["created_at", "2019-11-13 19:36:54.571656"], ["updated_at", "2019-11-13 19:36:54.571656"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+Completed 500 Internal Server Error in 854ms (ActiveRecord: 92.2ms | Allocations: 79128)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/decks_controller.rb:19:in `block in create'
+app/controllers/decks_controller.rb:14:in `times'
+app/controllers/decks_controller.rb:14:in `create'
+Started GET "/users" for ::1 at 2019-11-13 14:37:04 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 11]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.9ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 22]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 23]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 12]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 18869)
+
+
+Started GET "/decks/23" for ::1 at 2019-11-13 14:37:05 -0500
+Processing by DecksController#show as */*
+  Parameters: {"id"=>"23"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:30:in `show'
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 23]]
+  ↳ app/controllers/decks_controller.rb:32:in `show'
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 5786)
+
+
+Started GET "/users" for ::1 at 2019-11-13 14:37:21 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 11]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 22]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 23]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 12]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 31ms (Views: 0.1ms | ActiveRecord: 1.5ms | Allocations: 18870)
+
+
+Started POST "/decks" for ::1 at 2019-11-13 14:37:32 -0500
+Processing by DecksController#create as JSON
+  Parameters: {"user_id"=>11, "type1"=>"psychic", "type2"=>"darkness", "deck_name"=>"Psydark", "deck"=>{"user_id"=>11}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[36mDeck Create (0.9ms)[0m  [1m[32mINSERT INTO "decks" ("name", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Psydark"], ["user_id", 11], ["created_at", "2019-11-13 19:37:32.891722"], ["updated_at", "2019-11-13 19:37:32.891722"]]
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:4:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Drapion"], ["imageUrl", "https://images.pokemontcg.io/dp1/23_hires.png"], ["hp", 100], ["attack_name", "Stomp"], ["attack_damage", 20], ["attack_name_2", "Poison Claws"], ["attack_damage_2", 50], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.107039"], ["updated_at", "2019-11-13 19:37:33.107039"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Krokorok"], ["imageUrl", "https://images.pokemontcg.io/xy1/70_hires.png"], ["hp", 90], ["attack_name", "Crunch"], ["attack_damage", 20], ["attack_name_2", "Darkness Fang"], ["attack_damage_2", 60], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.112319"], ["updated_at", "2019-11-13 19:37:33.112319"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Weavile"], ["imageUrl", "https://images.pokemontcg.io/dp1/40_hires.png"], ["hp", 80], ["attack_name", "Nasty Plot"], ["attack_damage", 0], ["attack_name_2", "Dark Pulse"], ["attack_damage_2", 10], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.118303"], ["updated_at", "2019-11-13 19:37:33.118303"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Drowzee"], ["imageUrl", "https://images.pokemontcg.io/base1/49_hires.png"], ["hp", 50], ["attack_name", "Pound"], ["attack_damage", 10], ["attack_name_2", "Confuse Ray"], ["attack_damage_2", 10], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.127238"], ["updated_at", "2019-11-13 19:37:33.127238"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mesprit"], ["imageUrl", "https://images.pokemontcg.io/dp2/14_hires.png"], ["hp", 60], ["attack_name", "Teleportation Burst"], ["attack_damage", 30], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.134443"], ["updated_at", "2019-11-13 19:37:33.134443"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Grimer"], ["imageUrl", "https://images.pokemontcg.io/hgss3/50_hires.png"], ["hp", 60], ["attack_name", "Sticky Liquid"], ["attack_damage", 0], ["attack_name_2", "Sludge Toss"], ["attack_damage_2", 20], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.140969"], ["updated_at", "2019-11-13 19:37:33.140969"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.9ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Skuntank"], ["imageUrl", "https://images.pokemontcg.io/dp1/15_hires.png"], ["hp", 90], ["attack_name", "Frustration"], ["attack_damage", 0], ["attack_name_2", "Toxic Cloud"], ["attack_damage_2", 30], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.150449"], ["updated_at", "2019-11-13 19:37:33.150449"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Trevenant"], ["imageUrl", "https://images.pokemontcg.io/xy1/55_hires.png"], ["hp", 110], ["attack_name", "Tree Slam"], ["attack_damage", 60], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.158011"], ["updated_at", "2019-11-13 19:37:33.158011"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.0ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Muk"], ["imageUrl", "https://images.pokemontcg.io/hgss3/31_hires.png"], ["hp", 100], ["attack_name", "Sludge Drag"], ["attack_damage", 0], ["attack_name_2", "Pester"], ["attack_damage_2", 50], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.166347"], ["updated_at", "2019-11-13 19:37:33.166347"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tentacool"], ["imageUrl", "https://images.pokemontcg.io/sm9/60_hires.png"], ["hp", 60], ["attack_name", "Wrap"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.174325"], ["updated_at", "2019-11-13 19:37:33.174325"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mesprit"], ["imageUrl", "https://images.pokemontcg.io/dp2/14_hires.png"], ["hp", 60], ["attack_name", "Teleportation Burst"], ["attack_damage", 30], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.180575"], ["updated_at", "2019-11-13 19:37:33.180575"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Nidorino"], ["imageUrl", "https://images.pokemontcg.io/sm9/58_hires.png"], ["hp", 90], ["attack_name", "Peck"], ["attack_damage", 20], ["attack_name_2", "Horn Drill"], ["attack_damage_2", 60], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.189110"], ["updated_at", "2019-11-13 19:37:33.189110"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yveltal"], ["imageUrl", "https://images.pokemontcg.io/xy1/78_hires.png"], ["hp", 130], ["attack_name", "Oblivion Wing"], ["attack_damage", 30], ["attack_name_2", "Darkness Blade"], ["attack_damage_2", 100], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.195505"], ["updated_at", "2019-11-13 19:37:33.195505"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Misdreavus"], ["imageUrl", "https://images.pokemontcg.io/dp6/107_hires.png"], ["hp", 60], ["attack_name", "Show Off"], ["attack_damage", 0], ["attack_name_2", "Payback"], ["attack_damage_2", 10], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.204022"], ["updated_at", "2019-11-13 19:37:33.204022"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Inkay"], ["imageUrl", "https://images.pokemontcg.io/xy0/18_hires.png"], ["hp", 60], ["attack_name", "Peck"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.212646"], ["updated_at", "2019-11-13 19:37:33.212646"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Shedinja"], ["imageUrl", "https://images.pokemontcg.io/ex8/14_hires.png"], ["hp", 50], ["attack_name", "Extra Curse"], ["attack_damage", 0], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.220331"], ["updated_at", "2019-11-13 19:37:33.220331"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Krokorok"], ["imageUrl", "https://images.pokemontcg.io/xy1/70_hires.png"], ["hp", 90], ["attack_name", "Crunch"], ["attack_damage", 20], ["attack_name_2", "Darkness Fang"], ["attack_damage_2", 60], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.233593"], ["updated_at", "2019-11-13 19:37:33.233593"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (2.0ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Nidoran♂"], ["imageUrl", "https://images.pokemontcg.io/xy11/43_hires.png"], ["hp", 60], ["attack_name", "Come Along"], ["attack_damage", 0], ["attack_name_2", "Peck"], ["attack_damage_2", 20], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.245706"], ["updated_at", "2019-11-13 19:37:33.245706"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Trubbish"], ["imageUrl", "https://images.pokemontcg.io/bw8/64_hires.png"], ["hp", 60], ["attack_name", "Pound"], ["attack_damage", 10], ["attack_name_2", "Sludge Bomb"], ["attack_damage_2", 40], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.255681"], ["updated_at", "2019-11-13 19:37:33.255681"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Inkay"], ["imageUrl", "https://images.pokemontcg.io/xy0/18_hires.png"], ["hp", 60], ["attack_name", "Peck"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.265714"], ["updated_at", "2019-11-13 19:37:33.265714"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mightyena δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/24_hires.png"], ["hp", 70], ["attack_name", "Delta Fang"], ["attack_damage", 20], ["attack_name_2", "Gang Up"], ["attack_damage_2", 10], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.274369"], ["updated_at", "2019-11-13 19:37:33.274369"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yveltal"], ["imageUrl", "https://images.pokemontcg.io/xy1/78_hires.png"], ["hp", 130], ["attack_name", "Oblivion Wing"], ["attack_damage", 30], ["attack_name_2", "Darkness Blade"], ["attack_damage_2", 100], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.281011"], ["updated_at", "2019-11-13 19:37:33.281011"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Zorua"], ["imageUrl", "https://images.pokemontcg.io/bw5/69_hires.png"], ["hp", 50], ["attack_name", "Ascension"], ["attack_damage", 0], ["attack_name_2", "Scratch"], ["attack_damage_2", 20], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.289536"], ["updated_at", "2019-11-13 19:37:33.289536"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mismagius"], ["imageUrl", "https://images.pokemontcg.io/dp1/10_hires.png"], ["hp", 90], ["attack_name", "Avenge"], ["attack_damage", 0], ["attack_name_2", "Psywave"], ["attack_damage_2", 30], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.299008"], ["updated_at", "2019-11-13 19:37:33.299008"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Unown"], ["imageUrl", "https://images.pokemontcg.io/xy7/30_hires.png"], ["hp", 60], ["attack_name", "Hidden Power"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.307534"], ["updated_at", "2019-11-13 19:37:33.307534"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.9ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Shiftry"], ["imageUrl", "https://images.pokemontcg.io/dp1/14_hires.png"], ["hp", 120], ["attack_name", "Spirit Dance"], ["attack_damage", 50], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.313937"], ["updated_at", "2019-11-13 19:37:33.313937"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gastly"], ["imageUrl", "https://images.pokemontcg.io/xyp/XY132_hires.png"], ["hp", 50], ["attack_name", "Sleep Poison"], ["attack_damage", 0], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.323879"], ["updated_at", "2019-11-13 19:37:33.323879"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Krokorok"], ["imageUrl", "https://images.pokemontcg.io/bw5/65_hires.png"], ["hp", 90], ["attack_name", "Mud-Slap"], ["attack_damage", 30], ["attack_name_2", "Corkscrew Punch"], ["attack_damage_2", 70], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.334308"], ["updated_at", "2019-11-13 19:37:33.334308"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (3.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team Aqua's Carvanha"], ["imageUrl", "https://images.pokemontcg.io/dc1/20_hires.png"], ["hp", 50], ["attack_name", "Fin Smack"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.341806"], ["updated_at", "2019-11-13 19:37:33.341806"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Inkay"], ["imageUrl", "https://images.pokemontcg.io/xy0/18_hires.png"], ["hp", 60], ["attack_name", "Peck"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.355536"], ["updated_at", "2019-11-13 19:37:33.355536"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Muk"], ["imageUrl", "https://images.pokemontcg.io/hgss3/31_hires.png"], ["hp", 100], ["attack_name", "Sludge Drag"], ["attack_damage", 0], ["attack_name_2", "Pester"], ["attack_damage_2", 50], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.365605"], ["updated_at", "2019-11-13 19:37:33.365605"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gastly"], ["imageUrl", "https://images.pokemontcg.io/xyp/XY132_hires.png"], ["hp", 50], ["attack_name", "Sleep Poison"], ["attack_damage", 0], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.373828"], ["updated_at", "2019-11-13 19:37:33.373828"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Zorua"], ["imageUrl", "https://images.pokemontcg.io/bw5/69_hires.png"], ["hp", 50], ["attack_name", "Ascension"], ["attack_damage", 0], ["attack_name_2", "Scratch"], ["attack_damage_2", 20], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.384670"], ["updated_at", "2019-11-13 19:37:33.384670"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (3.9ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Honchkrow"], ["imageUrl", "https://images.pokemontcg.io/hgss3/15_hires.png"], ["hp", 90], ["attack_name", "Whirlwind"], ["attack_damage", 20], ["attack_name_2", "Blindside"], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.393016"], ["updated_at", "2019-11-13 19:37:33.393016"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Golbat"], ["imageUrl", "https://images.pokemontcg.io/sm10/65_hires.png"], ["hp", 80], ["attack_name", "Bite"], ["attack_damage", 20], ["attack_name_2", "Leech Life"], ["attack_damage_2", 40], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.409488"], ["updated_at", "2019-11-13 19:37:33.409488"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Inkay"], ["imageUrl", "https://images.pokemontcg.io/xy1/75_hires.png"], ["hp", 50], ["attack_name", "Tackle"], ["attack_damage", 10], ["attack_name_2", "Puncture"], ["attack_damage_2", 20], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.427205"], ["updated_at", "2019-11-13 19:37:33.427205"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Weavile"], ["imageUrl", "https://images.pokemontcg.io/hgss3/25_hires.png"], ["hp", 80], ["attack_name", "Feint Attack"], ["attack_damage", 0], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.441244"], ["updated_at", "2019-11-13 19:37:33.441244"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mesprit"], ["imageUrl", "https://images.pokemontcg.io/dp2/14_hires.png"], ["hp", 60], ["attack_name", "Teleportation Burst"], ["attack_damage", 30], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.449478"], ["updated_at", "2019-11-13 19:37:33.449478"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Grumpig"], ["imageUrl", "https://images.pokemontcg.io/ex3/6_hires.png"], ["hp", 80], ["attack_name", "Psychic Boom"], ["attack_damage", 20], ["attack_name_2", "Mind Trip"], ["attack_damage_2", 50], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.461025"], ["updated_at", "2019-11-13 19:37:33.461025"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dusknoir"], ["imageUrl", "https://images.pokemontcg.io/dp1/2_hires.png"], ["hp", 120], ["attack_name", "Hard Feelings"], ["attack_damage", 0], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.473726"], ["updated_at", "2019-11-13 19:37:33.473726"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Umbreon"], ["imageUrl", "https://images.pokemontcg.io/hgss3/86_hires.png"], ["hp", 100], ["attack_name", "Evoblast"], ["attack_damage", 50], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.483426"], ["updated_at", "2019-11-13 19:37:33.483426"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Unown P"], ["imageUrl", "https://images.pokemontcg.io/dp5/33_hires.png"], ["hp", 50], ["attack_name", "Hidden Power"], ["attack_damage", 20], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.495182"], ["updated_at", "2019-11-13 19:37:33.495182"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Wynaut"], ["imageUrl", "https://images.pokemontcg.io/dp1/42_hires.png"], ["hp", 40], ["attack_name", "Astonish"], ["attack_damage", 0], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.506690"], ["updated_at", "2019-11-13 19:37:33.506690"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Zorua"], ["imageUrl", "https://images.pokemontcg.io/bw5/69_hires.png"], ["hp", 50], ["attack_name", "Ascension"], ["attack_damage", 0], ["attack_name_2", "Scratch"], ["attack_damage_2", 20], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.516543"], ["updated_at", "2019-11-13 19:37:33.516543"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.9ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Unown C"], ["imageUrl", "https://images.pokemontcg.io/dp1/67_hires.png"], ["hp", 50], ["attack_name", "Hidden Power"], ["attack_damage", 10], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.525350"], ["updated_at", "2019-11-13 19:37:33.525350"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.8ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yveltal-EX"], ["imageUrl", "https://images.pokemontcg.io/xy1/144_hires.png"], ["hp", 170], ["attack_name", "Evil Ball"], ["attack_damage", 20], ["attack_name_2", "Y Cyclone"], ["attack_damage_2", 90], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.539068"], ["updated_at", "2019-11-13 19:37:33.539068"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Nidoran♂"], ["imageUrl", "https://images.pokemontcg.io/xy11/43_hires.png"], ["hp", 60], ["attack_name", "Come Along"], ["attack_damage", 0], ["attack_name_2", "Peck"], ["attack_damage_2", 20], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.549746"], ["updated_at", "2019-11-13 19:37:33.549746"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Toxicroak"], ["imageUrl", "https://images.pokemontcg.io/dp5/31_hires.png"], ["hp", 90], ["attack_name", "Paralyze Poison"], ["attack_damage", 20], ["attack_name_2", "Slash"], ["attack_damage_2", 60], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.558182"], ["updated_at", "2019-11-13 19:37:33.558182"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mesprit"], ["imageUrl", "https://images.pokemontcg.io/dp2/14_hires.png"], ["hp", 60], ["attack_name", "Teleportation Burst"], ["attack_damage", 30], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.585912"], ["updated_at", "2019-11-13 19:37:33.585912"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ralts"], ["imageUrl", "https://images.pokemontcg.io/ex16/59_hires.png"], ["hp", 50], ["attack_name", "Slap"], ["attack_damage", 10], ["attack_name_2", "Teleportation Burst"], ["attack_damage_2", 20], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.592960"], ["updated_at", "2019-11-13 19:37:33.592960"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yveltal-EX"], ["imageUrl", "https://images.pokemontcg.io/xy1/144_hires.png"], ["hp", 170], ["attack_name", "Evil Ball"], ["attack_damage", 20], ["attack_name_2", "Y Cyclone"], ["attack_damage_2", 90], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.602576"], ["updated_at", "2019-11-13 19:37:33.602576"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (1.2ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Team Aqua's Mightyena"], ["imageUrl", "https://images.pokemontcg.io/dc1/18_hires.png"], ["hp", 100], ["attack_name", "Teampact"], ["attack_damage", 30], ["attack_name_2", "Crunch"], ["attack_damage_2", 80], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.611434"], ["updated_at", "2019-11-13 19:37:33.611434"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mightyena δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/24_hires.png"], ["hp", 70], ["attack_name", "Delta Fang"], ["attack_damage", 20], ["attack_name_2", "Gang Up"], ["attack_damage_2", 10], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.620148"], ["updated_at", "2019-11-13 19:37:33.620148"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Shedinja"], ["imageUrl", "https://images.pokemontcg.io/ex8/14_hires.png"], ["hp", 50], ["attack_name", "Extra Curse"], ["attack_damage", 0], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.632190"], ["updated_at", "2019-11-13 19:37:33.632190"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Deoxys ex"], ["imageUrl", "https://images.pokemontcg.io/ex8/98_hires.png"], ["hp", 110], ["attack_name", "Psychic Burst"], ["attack_damage", 50], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.639348"], ["updated_at", "2019-11-13 19:37:33.639348"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mightyena δ"], ["imageUrl", "https://images.pokemontcg.io/ex11/24_hires.png"], ["hp", 70], ["attack_name", "Delta Fang"], ["attack_damage", 20], ["attack_name_2", "Gang Up"], ["attack_damage_2", 10], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.646191"], ["updated_at", "2019-11-13 19:37:33.646191"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sabrina's Abra"], ["imageUrl", "https://images.pokemontcg.io/gym1/91_hires.png"], ["hp", 40], ["attack_name", "Energy Loop"], ["attack_damage", 20], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.657013"], ["updated_at", "2019-11-13 19:37:33.657013"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.6ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alolan Muk"], ["imageUrl", "https://images.pokemontcg.io/sm12/131_hires.png"], ["hp", 140], ["attack_name", "Panic Poison"], ["attack_damage", 20], ["attack_name_2", "Sludge Bomb"], ["attack_damage_2", 110], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.666121"], ["updated_at", "2019-11-13 19:37:33.666121"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.4ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "attack_damage_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Misdreavus"], ["imageUrl", "https://images.pokemontcg.io/dp6/107_hires.png"], ["hp", 60], ["attack_name", "Show Off"], ["attack_damage", 0], ["attack_name_2", "Payback"], ["attack_damage_2", 10], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.676757"], ["updated_at", "2019-11-13 19:37:33.676757"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[36mCard Create (0.5ms)[0m  [1m[32mINSERT INTO "cards" ("name", "imageUrl", "hp", "attack_name", "attack_damage", "attack_name_2", "deck_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Wynaut"], ["imageUrl", "https://images.pokemontcg.io/dp1/42_hires.png"], ["hp", 40], ["attack_name", "Astonish"], ["attack_damage", 0], ["attack_name_2", nil], ["deck_id", 24], ["created_at", "2019-11-13 19:37:33.688122"], ["updated_at", "2019-11-13 19:37:33.688122"]]
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/decks_controller.rb:23:in `block in create'
+Completed 204 No Content in 810ms (ActiveRecord: 220.8ms | Allocations: 161091)
+
+
+Started GET "/users" for ::1 at 2019-11-13 14:37:44 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 11]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 22]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 23]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 24]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 12]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 42ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 29989)
+
+
+Started GET "/decks/24" for ::1 at 2019-11-13 14:37:45 -0500
+Processing by DecksController#show as */*
+  Parameters: {"id"=>"24"}
+  [1m[36mDeck Load (0.3ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:30:in `show'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 24]]
+  ↳ app/controllers/decks_controller.rb:32:in `show'
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 11556)
+
+
+Started GET "/users" for ::1 at 2019-11-13 14:37:59 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 11]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 22]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 23]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 24]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 12]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 37ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 29989)
+
+
+Started GET "/users" for ::1 at 2019-11-13 14:38:04 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 11]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 22]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 23]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 24]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.1ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 12]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 57ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 29992)
+
+
+Started GET "/decks/23" for ::1 at 2019-11-13 14:38:06 -0500
+Processing by DecksController#show as */*
+  Parameters: {"id"=>"23"}
+  [1m[36mDeck Load (0.4ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/decks_controller.rb:30:in `show'
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 23]]
+  ↳ app/controllers/decks_controller.rb:32:in `show'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 5786)
+
+
+Started GET "/users" for ::1 at 2019-11-13 14:38:47 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 11]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 22]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 23]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."deck_id" = ?[0m  [["deck_id", 24]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mDeck Load (0.2ms)[0m  [1m[34mSELECT "decks".* FROM "decks" WHERE "decks"."user_id" = ?[0m  [["user_id", 12]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 51ms (Views: 0.2ms | ActiveRecord: 2.2ms | Allocations: 29989)
+
+
