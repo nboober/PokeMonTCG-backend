@@ -22,7 +22,7 @@ water_gymLeader = User.create(name: "Water", password: "gym", username: "waterGy
  #poison_gymLeader = User.create(name: "Poison", password: "gym", username: "posionGym")
  ground_gymLeader = User.create(name: "Ground", password: "gym", username: "groundGym")
 
-# user1 = User.create(name: "Nick", password: "poke", username: "nboober")
+user1 = User.create(name: "Nick", password: "poke", username: "nboober")
 user2 = User.create(name: "Khaled", password: "poke", username: "khassan")
 user3 = User.create(name: "Sergio", password: "poke", username: "sperez")
 user4 = User.create(name: "Charlie", password: "poke", username: "cchung")
